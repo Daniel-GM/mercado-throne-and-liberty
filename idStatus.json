@@ -1,0 +1,1934 @@
+{
+    "result": {
+        "data": {
+            "dropped_item_pickable": {
+                "name": "Coleta Automática de Itens",
+                "valueFormat": " {0}",
+                "tooltipTitle": "113",
+                "tooltipDescription": "113",
+                "multiplier": 1,
+                "invert": false
+            },
+            "hp_max": {
+                "name": "Vida Máxima",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Vida Máxima <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Os personagens morrem se sua Vida for completamente esgotada.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "hp_regen": {
+                "name": "Regeneração de Vida",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Regeneração de Vida <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "A quantidade de Vida regenerada a cada 10s.",
+                "multiplier": 0.001,
+                "invert": false
+            },
+            "cost_max": {
+                "name": "Mana Máxima",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Mana Máxima <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "A quantidade de energia para usar habilidades.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "cost_regen": {
+                "name": "Regeneração de Mana",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Regeneração de Mana <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "A quantidade de Mana regenerada a cada 10s.",
+                "multiplier": 0.001,
+                "invert": false
+            },
+            "cost_consumption_modifier": {
+                "name": "Eficiência do Custo de Mana",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Eficiência do Custo de Mana <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Reduz a quantidade de Mana usada para habilidades.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "skill_cooldown_modifier": {
+                "name": "Velocidade de Recarga",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Velocidade de Recarga <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Reduz a recarga de habilidades.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "movement_speed_modifier": {
+                "name": "Velocidade de Movimento ",
+                "valueFormat": " {0}%",
+                "tooltipTitle": "120",
+                "tooltipDescription": "120",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_exp_acquired": {
+                "name": "Bônus de EXP",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Bônus de EXP <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a EXP ganha.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_gold_acquired": {
+                "name": "Bônus de Solaris",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Bônus de Solaris <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a quantidade de Solaris adquirida.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_item_drop": {
+                "name": "Chance de Obter Item",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Chance de Obter Item <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a chance de adquirir itens.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "earn_dungeon_point_modifier": {
+                "name": "Insígnias Extra de Contrato Abissal",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Insígnias Extra de Contrato Abissal <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumento das Insígnias Extra de Contrato Abissal.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "spend_dungeon_point_modifier": {
+                "name": "Eficiência de Insígnia de Contrato Abissal",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Eficiência de Insígnia de Contrato Abissal <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a eficiência ao usar as Insígnias de Contrato Abissal.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "pick_extra_material_chance": {
+                "name": "Aumento da Chance de Aquisição {0}",
+                "valueFormat": " {0}%",
+                "tooltipTitle": "170",
+                "tooltipDescription": "170",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "magic_doll_heal_modifier": {
+                "name": "Cura do Amitoi",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Cura do Amitoi <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a quantidade de Vida restaurada por Amitoi.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "move_speed_modifier": {
+                "name": "Velocidade de Movimento",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Velocidade de Movimento <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "93",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "skill_power_amplification": {
+                "name": "Ampliação de Dano de Habilidade",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ampliação de Dano de Habilidade <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano e a recuperação de habilidades. Para cada 10 pontos, a chance aumenta em cerca de 1%. À medida que o número aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "skill_power_resistance": {
+                "name": "Resistência a Dano de Habilidade",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Dano de Habilidade <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano recebido de habilidades. Para cada 10 pontos, a chance aumenta em cerca de 1%. À medida que o número aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "buff_given_duration_modifier": {
+                "name": "Duração da Vantagem",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Duração da Vantagem <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a duração de Vantagens.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "debuff_taken_duration_modifier": {
+                "name": "Duração da Desvantagem",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Duração da Desvantagem <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Reduz a duração dos efeitos de Desvantagem recebidos.",
+                "multiplier": 0.01,
+                "invert": true
+            },
+            "attack_speed_main_hand": {
+                "name": "Velocidade de Ataque",
+                "valueFormat": "{0}s",
+                "tooltipTitle": "Velocidade de Ataque <span style=\"color: #FFFFFF\">{0}s</span>",
+                "tooltipDescription": "O tempo que leva para desferir Ataques Normais e Ataques de Habilidade com sua arma principal.",
+                "multiplier": 0.001,
+                "invert": true
+            },
+            "adjust_resource_drop": {
+                "name": "Chance de Obter Material de Fabricação",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Chance de Obter Material de Fabricação <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a chance de adquirir Materiais de Fabricação.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "attack_range_main_hand": {
+                "name": "Alcance",
+                "valueFormat": "{0}m",
+                "tooltipTitle": "Alcance da Arma Principal <span style=\"color: #FFFFFF\">{0}m</span>",
+                "tooltipDescription": "O alcance de ataque da arma principal. O alcance de ataque é limitado a um máximo de 30m.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "melee_armor": {
+                "name": "Defesa Corpo a Corpo",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Defesa Corpo a Corpo <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido de ataques corpo a corpo.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "range_armor": {
+                "name": "Defesa à Distância",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Defesa à Distância <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido de ataques à distância.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "magic_armor": {
+                "name": "Defesa Mágica",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Defesa Mágica <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido de ataques mágicos.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "shield_block_chance": {
+                "name": "Chance de Bloqueio do Escudo",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Chance de Bloqueio do Escudo <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "A chance de bloquear um ataque com seu escudo. Em um bloqueio bem-sucedido, o dano sofrido é reduzido e evita efeitos de CM além de Fraqueza.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "pvp_melee_critical_attack": {
+                "name": "Chance de Acerto Crítico Corpo a Corpo no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico Corpo a Corpo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Ataques Corpo a Corpo acertarem como Acertos Críticos e causarem Dano Máximo no JxJ. Se o seu atributo for maior do que a Tolerância Corpo a Corpo do alvo, para cada 10 pontos de diferença, a Chance de Acerto de Acerto Crítico aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_critical_attack": {
+                "name": "Chance de Acerto Crítico à Distância no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico à Distância no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Ataques à Distância acertarem como Acertos Críticos e causarem Dano Máximo no JxJ. Se o seu atributo for maior do que a Tolerância à Distância do alvo, para cada 10 pontos de diferença, a Chance de Acerto Crítico aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_critical_attack": {
+                "name": "Chance de Acerto Crítico Mágico no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico Mágico no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de Ataques Mágicos acertarem como Acertos Críticos e causarem Dano Máximo no JxJ. Se o seu atributo for maior do que a Tolerância Mágica do alvo, para cada 10 pontos de diferença, a Chance de Acerto Crítico aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_melee_critical_defense": {
+                "name": "Tolerância Corpo a Corpo no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância Corpo a Corpo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de Ataques Corpo a Corpo no JxJ. Se o seu atributo for maior do que a Chance de Acerto Crítico Corpo a Corpo do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_critical_defense": {
+                "name": "Tolerância à Distância no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância à Distância no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de Ataques à Distância no JxJ. Se o seu atributo for maior do que a Chance de Acerto Crítico à Distância do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_critical_defense": {
+                "name": "Tolerância Mágica no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância Mágica no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de Ataques Mágicos no JxJ. Se o seu atributo for maior do que a Chance de Acerto Crítico Mágico do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "str": {
+                "name": "Força",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Força <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Serve como fonte de destreza física. Concede uma Defesa robusta, além de aumentar a Vida Máxima, a Regeneração de Vida, o Dano Máximo e o Dano Mínimo.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "pvp_melee_double_attack": {
+                "name": "Chance de Ataque Pesado Corpo a Corpo no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado Corpo a Corpo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar o dobro de dano com Ataques Pesados Corpo a Corpo durante o JxJ. Se o seu atributo for maior do que a Esquiva de Ataque Pesado Corpo a Corpo do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_double_attack": {
+                "name": "Chance de Ataque Pesado à Distância no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado à Distância no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar o dobro de dano com Ataques Pesados à Distância durante o JxJ. Se o seu atributo for maior do que a Esquiva de Ataque Pesado à Distância do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_double_attack": {
+                "name": "Chance de Ataque Pesado Mágico no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado Mágico no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar o dobro de dano com Ataques Pesados Mágicos durante o JxJ. Se o seu atributo for maior do que a Esquiva de Ataque Pesado Mágico do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_melee_double_defense": {
+                "name": "Esquiva de Ataque Pesado Corpo a Corpo no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado Corpo a Corpo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz a chance de sofrer um Ataque Pesado Corpo a Corpo e receber o dobro de dano no JxJ. Para cada 10 de Atributo, reduz a chance em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_double_defense": {
+                "name": "Esquiva de Ataque Pesado à Distância no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado à Distância no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Sofrer um Ataque Pesado à Distância reduz a chance de sofrer dano duplo durante o JxJ. Para cada 10 de Atributo, reduz a chance em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_double_defense": {
+                "name": "Esquiva de Ataque Pesado Mágico no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado Mágico no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Sofrer um Ataque Pesado Mágico reduz a chance de sofrer dano duplo durante o JxJ. Para cada 10 de Atributo, reduz a chance em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "dex": {
+                "name": "Destreza",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Destreza <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Serve como fonte de proficiência. Aumenta a rapidez e os ataques críticos, além da Esquiva e do Dano Máximo.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "int": {
+                "name": "Sabedoria",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Sabedoria <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Serve como fonte de destreza mental. Aumenta a Mana Máxima e a Regeneração de Mana, além de habilidades de recarga e o Dano Máximo.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "per": {
+                "name": "Percepção",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Percepção <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Serve como fonte de percepção e consciência. Aumenta a percepção durante a batalha. Aumenta a precisão dos ataques, os efeitos de CM, a duração de Vantagens e o Dano Máximo e Dano Mínimo.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "boss_melee_critical_attack": {
+                "name": "Chance de Acerto Crítico Corpo a Corpo contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico Corpo a Corpo contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Ataques Corpo a Corpo acertarem como Acertos Críticos e causarem Dano Máximo contra chefes. Se o seu atributo for maior do que a Tolerância Corpo a Corpo do alvo, para cada 10 pontos de diferença, a Chance de Acerto de Acerto Crítico aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_critical_attack": {
+                "name": "Chance de Acerto Crítico à Distância contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico à Distância contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Ataques à Distância acertarem como Acertos Críticos e causarem Dano Máximo contra chefes. Se o seu atributo for maior do que a Tolerância à Distância do alvo, para cada 10 pontos de diferença, a Chance de Acerto Crítico aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_critical_attack": {
+                "name": "Chance de Acerto Crítico Mágico contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico Mágico contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Ataques Mágicos acertarem como Acertos Críticos e causarem Dano Máximo contra chefes. Se o seu atributo for maior do que a Tolerância Mágica do alvo, para cada 10 pontos de diferença, a Chance de Acerto Crítico aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_melee_critical_defense": {
+                "name": "Tolerância Corpo a Corpo contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância Corpo a Corpo contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de Ataques Corpo a Corpo por chefes. Se o seu atributo for maior do que o Acerto Crítico Corpo a Corpo do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_critical_defense": {
+                "name": "Tolerância à Distância contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância à Distância contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de Ataques à Distância por chefes. Se o seu atributo for maior do que o Acerto Crítico à Distância do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_critical_defense": {
+                "name": "Tolerância Mágica contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância Mágica contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de Ataques Mágicos por chefes. Se o seu atributo for maior do que a Chance de Acerto Crítico Mágico do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_melee_double_attack": {
+                "name": "Chance de Ataque Pesado Corpo a Corpo contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado Corpo a Corpo contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar o dobro de dano com Ataques Pesados Corpo a Corpo contra chefes. Se o seu atributo for maior do que a Esquiva de Ataque Pesado Corpo a Corpo do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_double_attack": {
+                "name": "Chance de Ataque Pesado à Distância contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado à Distância contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar o dobro de dano com Ataques Pesados à Distância contra chefes. Se o seu atributo for maior do que a Esquiva de Ataque Pesado à Distância do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_double_attack": {
+                "name": "Chance de Ataque Pesado Mágico contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado Mágico contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar o dobro de dano com Ataques Pesados Mágicos contra chefes. Se o seu atributo for maior do que a Esquiva de Ataque Pesado Mágico do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_melee_double_defense": {
+                "name": "Esquiva de Ataque Pesado Corpo a Corpo contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado Corpo a Corpo contra Chefe <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Sofrer um Ataque Pesado Corpo a Corpo de um Chefe reduz a chance de sofrer dano duplo. Para cada 10 pontos, reduz a chance em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_double_defense": {
+                "name": "Esquiva de Ataque Pesado à Distância contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado à Distância contra Chefe <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Sofrer um Ataque Pesado à Distância de um Chefe reduz a chance de sofrer dano duplo. Para cada 10 pontos, reduz a chance em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_double_defense": {
+                "name": "Esquiva de Ataque Pesado Mágico contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado Mágico contra Chefe <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Sofrer um Ataque Pesado Mágico de um Chefe reduz a chance de sofrer dano duplo. Para cada 10 pontos, reduz a chance em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_accuracy": {
+                "name": "Chance de Acerto",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques Normais e a chance de aplicar efeitos de CM com habilidades. Para cada 10 pontos, a Chance de Acerto aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_critical_attack": {
+                "name": "Chance de Acerto Crítico",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de ataques acertarem como Acertos Críticos e causarem Dano Máximo. Para cada 10 pontos, a Chance de Acerto Crítico aumenta 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_double_attack": {
+                "name": "Chance de Ataque Pesado",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar dano duplo com Ataques Pesados. Para cada 10 pontos, a chance +1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "attack_rating": {
+                "name": "Chance de Acerto",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "O atributo não é visível para o usuário.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "all_armor": {
+                "name": "Defesa",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Defesa <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido de ataques.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "all_evasion": {
+                "name": "Esquiva",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de ataques. Para cada 10 pontos, a chance de esquiva aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_critical_defense": {
+                "name": "Tolerância",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de ataques. Para cada 10 pontos, a chance aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_double_defense": {
+                "name": "Esquiva de Ataque Pesado",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz a chance de sofrer dano duplo de Ataques Pesados. Para cada 10 pontos, a Chance de Acerto Crítico é reduzida em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_accuracy": {
+                "name": "Chance de Acerto contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques Normais e a chance de aplicar efeitos de CM com habilidades contra chefes. Para cada 10 pontos, a Chance de Acerto aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_critical_attack": {
+                "name": "Chance de Acerto Crítico contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de ataques acertarem como Acertos Críticos e causarem Dano Máximo contra monstros chefes. Para cada 10 pontos, a Chance de Acerto Crítico aumenta cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_double_attack": {
+                "name": "Chance de Ataque Pesado contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar dano duplo a chefes com Ataques Pesados. Para cada 10 pontos, a chance aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_evasion": {
+                "name": "Esquiva de Chefe",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Chefe <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de ataques causados por chefes. Para cada 10 pontos, a chance aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_critical_defense": {
+                "name": "Tolerância a Chefe",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância a Chefe <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de ataques por monstros chefes. Para cada 10 pontos, a Tolerância aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_double_defense": {
+                "name": "Esquiva de Ataque Pesado contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz a chance de sofrer dano duplo de Ataques Pesados de chefes. Para cada 10 pontos, a chance é reduzida em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "melee_accuracy": {
+                "name": "Chance de Acerto Corpo a Corpo",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Corpo a Corpo <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques Corpo a Corpo e a chance de aplicar efeitos de CM com habilidades corpo a corpo. Se o seu atributo for maior do que a Esquiva Corpo a Corpo do alvo, para cada 10 pontos de diferença, a Chance de Acerto aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_accuracy": {
+                "name": "Chance de Acerto no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques Normais e a chance de aplicar efeitos de CM com habilidades durante o JxJ. Para cada 10 pontos, a Chance de Acerto aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_critical_attack": {
+                "name": "Chance de Acerto Crítico no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de ataques acertarem como Acertos Críticos e causarem Dano Máximo contra oponentes no JxJ. Para cada 10 pontos, a Chance de Acerto Crítico aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_double_attack": {
+                "name": "Chance de Ataque Pesado no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar dano duplo com Ataque Pesado durante o JxJ. Para cada 10 pontos, a chance aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_evasion": {
+                "name": "Esquiva no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de ataques durante o JxJ. Para cada 10 pontos, a chance aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_critical_defense": {
+                "name": "Tolerância no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de ataques por oponentes no JxJ. Para cada 10 pontos, a Tolerância aumenta em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_double_defense": {
+                "name": "Esquiva de Ataque Pesado no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Sofrer um Ataque Pesado reduz a chance de sofrer dano duplo no JxJ. Para cada 10 pontos, reduz a chance em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_state_accuracy": {
+                "name": "Chance de CM",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de CM <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar efeitos de CM. Para cada 10 pontos, a chance aumenta em cerca de 4%.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "all_state_tolerance": {
+                "name": "Resistência a CM",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a CM <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de resistir a CM. Para cada 10 pontos, a chance aumenta em cerca de 4%.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "range_accuracy": {
+                "name": "Chance de Acerto à Distância",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto à Distância <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques à Distância e a chance de aplicar efeitos de CM com habilidades à distância. Se o seu atributo for maior do que a Esquiva à Distância do alvo, para cada 10 pontos de diferença, a Chance de Acerto aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "grankus_damage_amplification": {
+                "name": "Ampliação de Dano contra Bárbaros",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ampliação de Dano contra Humanoides <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Humanoides. Para cada 10 pontos, o dano aumenta em cerca de 1%. À medida que o número aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "undead_damage_amplification": {
+                "name": "Ampliação de Dano contra Mortos-vivos",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ampliação de Dano contra Mortos-vivos <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Mortos-vivos. Para cada 10 pontos, o dano aumenta em cerca de 1%. À medida que o número aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "animal_damage_amplification": {
+                "name": "Ampliação de Dano contra Selvagens",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ampliação de Dano contra Selvagens <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Selvagens. Para cada 10 pontos, o dano aumenta em cerca de 1%. À medida que o número aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "creation_damage_amplification": {
+                "name": "Ampliação de Dano contra Construtos",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ampliação de Dano contra Construtos <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Construtos. Para cada 10 pontos, o dano aumenta cerca de 1%. À medida que o número aumenta, a eficiência diminui.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "demon_damage_amplification": {
+                "name": "Ampliação de Dano contra Demônios",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ampliação de Dano contra Demônios <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Demônios. Para cada 10 pontos, o dano aumenta em cerca de 1%. À medida que o número aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "grankus_damage_resistance": {
+                "name": "Resistência a Dano contra Humanoides",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Dano contra Humanoides <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido de Humanoides. Para cada 10 pontos, o dano é reduzido em cerca de 1%. À medida que o número aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "undead_damage_resistance": {
+                "name": "Resistência a Dano contra Mortos-vivos",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Dano contra Mortos-vivos <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido de Mortos-vivos. Para cada 10 pontos, o dano é reduzido em cerca de 1%. À medida que o número aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "animal_damage_resistance": {
+                "name": "Resistência a Dano contra Selvagens",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Dano contra Selvagens <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido de Selvagens. Para cada 10 pontos, o dano é reduzido em cerca de 1%. À medida que o número aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "creation_damage_resistance": {
+                "name": "Resistência a Dano contra Construtos",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Dano contra Construtos <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido de Construtos. Para cada 10 pontos, o dano é reduzido cerca de 1%. À medida que o número aumenta, a eficiência diminui.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_accuracy": {
+                "name": "Chance de Acerto Mágico",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Mágico <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques Mágicos e a chance de aplicar efeitos de CM com habilidades mágicas. Se o seu atributo for maior do que a Esquiva Mágica do alvo, para cada 10 pontos de diferença, a Chance de Acerto aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "demon_damage_resistance": {
+                "name": "Resistência a Dano contra Demônios",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Dano contra Demônios <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido de Demônios. Para cada 10 pontos, o dano é reduzido em cerca de 1%. À medida que o número aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "adjust_fishing_exp_acquired": {
+                "name": "EXP de Pesca",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "EXP de Pesca <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a EXP de Pesca ganha.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_fishing_drop_large": {
+                "name": "Chance de Mordida de Peixe Grande",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Chance de Mordida de Peixe Grande <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a chance de um peixe grande morder.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_fishing_drop_medium": {
+                "name": "Chance de Mordida de Peixe Médio",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Chance de Mordida de Peixe Médio <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a chance de um peixe médio morder.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_fishing_drop_small": {
+                "name": "Chance de Mordida de Peixe Pequeno",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Chance de Mordida de Peixe Pequeno <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a chance de um peixe pequeno morder.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "additional_fishing_level": {
+                "name": "Nível Adicional de Pesca",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Nível Adicional de Pesca <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Exibe níveis adicionais de Pesca aplicados.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "adjust_cooking_exp_acquired": {
+                "name": "EXP de Culinária",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "EXP de Culinária <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a EXP de Culinária ganha.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "melee_evasion": {
+                "name": "Esquiva Corpo a Corpo",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva Corpo a Corpo <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de Esquiva Corpo a Corpo. Se o seu atributo for maior do que a Chance de Acerto do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "range_evasion": {
+                "name": "Esquiva à Distância",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva à Distância <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Esquiva à Distância. Se o seu atributo for maior do que a Chance de Acerto do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_evasion": {
+                "name": "Esquiva Mágica",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva Mágica <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Esquiva Mágica. Se o seu atributo for maior do que a Chance de Acerto do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "melee_critical_attack": {
+                "name": "Chance de Acerto Crítico Corpo a Corpo",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico Corpo a Corpo <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Ataques Corpo a Corpo acertarem como Acertos Críticos e causarem Dano Máximo. Se o seu atributo for maior do que a Tolerância Corpo a Corpo do alvo, para cada 10 pontos de diferença, a Chance de Acerto Crítico aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "range_critical_attack": {
+                "name": "Chance de Acerto Crítico à Distância",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico à Distância <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Ataques à Distância acertarem como Acertos Críticos e causarem Dano Máximo. Se o seu atributo for maior do que a Tolerância à Distância do alvo, para cada 10 pontos de diferença, a Chance de Acerto Crítico aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_critical_attack": {
+                "name": "Chance de Acerto Crítico Mágico",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Crítico Mágico <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Ataques Mágicos acertarem como Acertos Críticos e causarem Dano Máximo. Se o seu atributo for maior do que a Tolerância Mágica do alvo, para cada 10 pontos de diferença, a Chance de Acerto Crítico aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "melee_critical_defense": {
+                "name": "Tolerância Corpo a Corpo",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância Corpo a Corpo <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de Ataques Corpo a Corpo. Se o seu atributo for maior do que a Chance de Acerto Crítico Corpo a Corpo do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "range_critical_defense": {
+                "name": "Tolerância à Distância",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância à Distância <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de Ataques à Distância. Se o seu atributo for maior do que o Acerto Crítico à Distância do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_critical_defense": {
+                "name": "Tolerância Mágica",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância Mágica <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de Acertos Críticos e sofrer Dano Mínimo de Ataques Mágicos. Se o seu atributo for maior do que a Chance de Acerto Crítico Mágico do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "damage_reduction_penetration": {
+                "name": "Bônus de Dano",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "off_hand_attack_chance": {
+                "name": "Chance de Ataque Duplo com Arma Sec.",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Chance de Ataque Duplo com Arma Secundária <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "A Taxa de Ataque com sua Arma Secundária ao causar um Ataque Normal ou usar uma habilidade.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "damage_reduction": {
+                "name": "Redução de Dano",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Redução de Dano <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "melee_double_attack": {
+                "name": "Chance de Ataque Pesado Corpo a Corpo",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado Corpo a Corpo <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar o dobro de dano com Ataques Pesados Corpo a Corpo. Se o seu atributo for maior do que a Esquiva de Ataque Pesado Corpo a Corpo do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "range_double_attack": {
+                "name": "Chance de Ataque Pesado à Distância",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado à Distância <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar o dobro de dano com Ataques Pesados à Distância. Se o seu atributo for maior do que a Esquiva de Ataque Pesado à Distância do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_double_attack": {
+                "name": "Chance de Ataque Pesado Mágico",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Ataque Pesado Mágico <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar o dobro de dano com Ataques Pesados Mágicos. Se o seu atributo for maior do que a Esquiva de Ataque Pesado Mágico do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "melee_double_defense": {
+                "name": "Esquiva de Ataque Pesado Corpo a Corpo",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado Corpo a Corpo <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz a chance de sofrer dano duplo de Ataques Pesados Corpo a Corpo. Para cada 10 pontos, a chance é reduzida em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "range_double_defense": {
+                "name": "Esquiva de Ataque Pesado à Distância",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado à Distância <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz a chance de sofrer dano duplo de Ataques Pesados à Distância. Para cada 10 pontos, a chance é reduzida em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_double_defense": {
+                "name": "Esquiva de Ataque Pesado Mágico",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Ataque Pesado Mágico <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz a chance de sofrer dano duplo de Ataques Pesados Mágicos. Para cada 10 pontos, a chance é reduzida em cerca de 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "weaken_accuracy": {
+                "name": "Chance de Fraqueza",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Fraqueza <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar Fraqueza em um alvo. Se o seu atributo for maior do que a Resistência a Fraqueza do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "stun_accuracy": {
+                "name": "Chance de Atordoamento",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Atordoamento <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar Atordoamento em um alvo. Se o seu atributo for maior do que a Resistência a Atordoamento do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "petrification_accuracy": {
+                "name": "Chance de Petrificação",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Petrificação <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar Petrificação em um alvo. Se o seu atributo for maior do que a Resistência a Petrificação do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "sleep_accuracy": {
+                "name": "Chance de Sono",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Sono <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar Sono em um alvo. Se o seu atributo for maior do que a Resistência a Sono do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "silence_accuracy": {
+                "name": "Chance de Silêncio",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Silêncio <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar Silêncio em um alvo. Se o seu atributo for maior do que a Resistência a Silêncio do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "blind_accuracy": {
+                "name": "Chance de Medo",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Medo <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar Medo em um alvo. Se o seu atributo for maior do que a Resistência a Medo do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "bind_accuracy": {
+                "name": "Chance de Imobilização",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Imobilização <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de causar Imobilização em um alvo. Se o seu atributo for maior do que a Resistência a Imobilização do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "attack_power_main_hand": {
+                "name": "Dano",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Dano <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Dano Base ao atacar com sua arma principal.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "collide_amplification": {
+                "name": "Chance de Colisão",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Colisão <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar Efeito de Colisão e a distância de deslocamento. Se o seu atributo for maior do que a Esquiva de Colisão do alvo, para cada 10 pontos de diferença, a chance e a distância aumentarão em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "weaken_tolerance": {
+                "name": "Resistência a Fraqueza",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Fraqueza <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de resistir à Fraqueza. Se o seu atributo for maior do que a Chance de Fraqueza do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "stun_tolerance": {
+                "name": "Resistência a Atordoamento",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Atordoamento <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de resistir ao Atordoamento. Se o seu atributo for maior do que a Chance de Atordoamento do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "petrification_tolerance": {
+                "name": "Resistência a Petrificação",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Petrificação <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de resistir a Petrificação. Se o seu atributo for maior do que a Chance de Petrificação do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "sleep_tolerance": {
+                "name": "Resistência a Sono",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Sono <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de resistir ao Sono. Se o seu atributo for maior do que a Chance de Sono do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "silence_tolerance": {
+                "name": "Resistência a Silêncio",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Silêncio <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de resistir ao Silêncio. Se o seu atributo for maior do que a Chance de Silêncio do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "blind_tolerance": {
+                "name": "Resistência a Medo",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Medo <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de resistir a Medo. Se o seu atributo for maior do que a Chance de Medo do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "bind_tolerance": {
+                "name": "Resistência a Imobilização",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Imobilização <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de resistir à Imobilização. Se o seu atributo for maior do que a Chance de Imobilização do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "collide_resistance": {
+                "name": "Resistência a Colisão",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Resistência a Colisão <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de resistir aos Efeitos de Colisão e reduz a distância de deslocamento. Se o seu atributo for maior do que a Chance de Colisão do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 4% e a distância será reduzida na mesma proporção. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "attack_power_off_hand": {
+                "name": "Dano da Arma Secundária",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Dano <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Dano Base ao atacar com sua arma secundária.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "potion_heal_modifier": {
+                "name": "Cura de Poção",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Cura de Poção <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a quantidade de Vida restaurada por Cristais de Recuperação.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "bonus_attack_power_main_hand": {
+                "name": "Dano Base ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Dano <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Dano Base ao atacar com sua arma principal.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "attack_range_mod": {
+                "name": "Aumenta o Alcance de Ataque",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Alcance ▲ <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "60",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "stamina_max": {
+                "name": "Vigor Máximo",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Vigor Máximo <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "A energia usada para habilidades de movimento. É consumida enquanto nada, plana e realiza outros movimentos.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "stamina_regen": {
+                "name": "Regeneração de Vigor",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Regeneração de Vigor <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "A quantidade de Vigor regenerado a cada 10s.",
+                "multiplier": 0.001,
+                "invert": false
+            },
+            "bonus_attack_power_off_hand": {
+                "name": "Dano Base ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Dano <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Dano Base ao atacar com sua arma secundária.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "grankus_bonus_attack_power": {
+                "name": "Bônus de Dano contra Bárbaros",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Humanoides <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Humanoides.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "demon_bonus_attack_power": {
+                "name": "Bônus de Dano contra Demônios",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Demônios <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Demônios.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "undead_bonus_attack_power": {
+                "name": "Bônus de Dano contra Mortos-vivos",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Mortos-vivos <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Mortos-vivos.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "creation_bonus_attack_power": {
+                "name": "Bônus de Dano contra Construtos",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Construtos <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Construtos.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "animal_bonus_attack_power": {
+                "name": "Bônus de Dano contra Selvagens",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Selvagem <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Selvagens.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "grankus_damage_reduction": {
+                "name": "태인류 피해량 경감",
+                "valueFormat": "{0}",
+                "tooltipTitle": "태인류 피해량 경감 <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano recebido de outros humanos.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "demon_damage_reduction": {
+                "name": "악마류 피해량 경감",
+                "valueFormat": "{0}",
+                "tooltipTitle": "악마류 피해량 경감 <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano recebido de demônios.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "undead_damage_reduction": {
+                "name": "불사류 피해량 경감",
+                "valueFormat": "{0}",
+                "tooltipTitle": "불사류 피해량 경감 <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano recebido de imortais.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "creation_damage_reduction": {
+                "name": "피조류 피해량 경감",
+                "valueFormat": "{0}",
+                "tooltipTitle": "피조류 피해량 경감 <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "O dano recebido de pássaros é reduzido.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "bonus_attack_power": {
+                "name": "Bônus de Dano",
+                "valueFormat": "{0}",
+                "tooltipTitle": "8",
+                "tooltipDescription": "8",
+                "multiplier": 1,
+                "invert": false
+            },
+            "animal_damage_reduction": {
+                "name": "동물류 피해량 경감",
+                "valueFormat": "{0}",
+                "tooltipTitle": "동물류 피해량 경감 <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano recebido de animais.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "einarden_damage_reduction": {
+                "name": "아신류 피해량 경감",
+                "valueFormat": "{0}",
+                "tooltipTitle": "아신류 피해량 경감 <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano recebido de Asin.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "dragon_damage_reduction": {
+                "name": "용각류 피해량 경감",
+                "valueFormat": "{0}",
+                "tooltipTitle": "용각류 피해량 경감 <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano recebido de saurópodes.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "spirit_damage_reduction": {
+                "name": "영혼류 피해량 경감",
+                "valueFormat": "{0}",
+                "tooltipTitle": "영혼류 피해량 경감 <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano recebido de espíritos.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "insect_damage_reduction": {
+                "name": "곤충류 피해량 경감",
+                "valueFormat": "{0}",
+                "tooltipTitle": "곤충류 피해량 경감 <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano recebido de insetos.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "plant_damage_reduction": {
+                "name": "식물류 피해량 경감",
+                "valueFormat": "{0}",
+                "tooltipTitle": "식물류 피해량 경감 <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano recebido das plantas.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "attack_speed_mod": {
+                "name": "Velocidade de Ataque Adicional",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Velocidade de Ataque <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "A porcentagem aumentada na Velocidade de Ataque.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "off_hand_attack_chance_modifier": {
+                "name": "Chance de Ataque Duplo com Arma Sec.",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Chance de Ataque Duplo com Arma Secundária <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "A porcentagem aumentada na Chance de Ataque com Arma Secundária.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "move_speed_mod": {
+                "name": "Velocidade de Movimento",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Velocidade de Movimento <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "93",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "attack_power_modifier": {
+                "name": "Dano da Arma",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "NewRow",
+                "tooltipDescription": "NewRow",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "aggro_modifier": {
+                "name": "Agressão ",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Taxa de Aumento/Redução de Agressão <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "100",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "stun_immune": {
+                "name": "Imunidade a Atordoamento",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Imunidade a Atordoamento <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "O tempo máximo após Atordoamento em que o efeito não pode ser aplicado novamente.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "petrification_immune": {
+                "name": "Imunidade a Petrificação",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Imunidade a Petrificação <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "O tempo máximo após Petrificação em que o efeito não pode ser aplicado novamente.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "sleep_immune": {
+                "name": "Imunidade a Sono",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Imunidade a Sono <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "O tempo máximo após Sono em que o efeito não pode ser aplicado novamente.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "silence_immune": {
+                "name": "Imunidade a Silêncio",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Imunidade a Silêncio <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "O tempo máximo após Silêncio em que o efeito não pode ser aplicado novamente.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "bind_immune": {
+                "name": "Imunidade a Imobilização",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Imunidade a Imobilização <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "O tempo máximo após Aprisionamento em que o efeito não pode ser aplicado novamente.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "blind_immune": {
+                "name": "Imunidade a Medo",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Imunidade a Medo <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "O tempo máximo após Medo em que o efeito não pode ser aplicado novamente.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "collide_immune": {
+                "name": "Imunidade a Colisão",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Imunidade a Colisão <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "O tempo máximo após Efeitos de Colisão em que os efeitos não podem ser aplicados novamente.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "global_skill_cooldown_modifier": {
+                "name": "Velocidade de Recarga Global",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Velocidade de Recarga Global <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Reduz a recarga de habilidades usadas consecutivamente.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "earn_weapon_mastery_exp_modifier": {
+                "name": "Bônus de Maestria",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Bônus de Maestria <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta o Bônus de Maestria de Armas.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "shield_block_efficiency": {
+                "name": "Redução de Dano do Escudo",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Redução de Dano do Escudo <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "A porcentagem de dano que seu escudo previne em um bloqueio bem-sucedido.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "pvp_melee_accuracy": {
+                "name": "Chance de Acerto Corpo a Corpo no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Corpo a Corpo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques Corpo a Corpo e a chance de aplicar efeitos de CM com habilidades corpo a corpo no JxJ. Se o seu atributo for maior do que a Esquiva Corpo a Corpo do alvo, para cada 10 pontos de diferença, a Chance de Acerto aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_accuracy": {
+                "name": "Chance de Acerto à Distância no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto à Distância no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques à Distância e a chance de aplicar efeitos de CM com habilidades à distância no JxJ. Se o seu atributo for maior do que a Esquiva à Distância do alvo, para cada 10 pontos de diferença, a Chance de Acerto aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_accuracy": {
+                "name": "Chance de Acerto Mágico no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Mágico no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques Mágicos e a chance de aplicar efeitos de CM com habilidades mágicas contra chefes. Se o seu atributo for maior do que a Esquiva Mágica do alvo, para cada 10 pontos de diferença, a Chance de Acerto aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_melee_evasion": {
+                "name": "Esquiva Corpo a Corpo no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva Corpo a Corpo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de Esquiva Corpo a Corpo no JxJ. Se o seu atributo for maior do que a Chance de Acerto do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_evasion": {
+                "name": "Esquiva à Distância no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva à Distância no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de Esquiva à Distância no JxJ. Se o seu atributo for maior do que a Chance de Acerto do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_evasion": {
+                "name": "Esquiva Mágica no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva Mágica no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de Esquiva Mágica no JxJ. Se o seu atributo for maior do que a Chance de Acerto do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "weaken_critical_attack": {
+                "name": "Chance de Fraqueza Crítica no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Fraqueza Crítica no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar os efeitos de Fraqueza Crítica e Fraqueza com Duração Máxima completa durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "stun_critical_attack": {
+                "name": "Chance de Atordoamento Crítico no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Atordoamento Crítico no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar os efeitos de Atordoamento Crítico e Atordoamento com Duração Máxima completa durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "petrification_critical_attack": {
+                "name": "Chance de Petrificação Crítica no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Petrificação Crítica no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar os efeitos de Petrificação Crítica e Petrificação com Duração Máxima completa durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "sleep_critical_attack": {
+                "name": "Chance de Sono Crítico no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Sono Crítico no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar os efeitos de Sono Crítico e Sono com Duração Máxima completa durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "silence_critical_attack": {
+                "name": "Chance de Silêncio Crítico no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Silêncio Crítico no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar os efeitos de Silêncio Crítico e Silêncio com Duração Máxima completa durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "blind_critical_attack": {
+                "name": "Chance de Medo Crítico no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Medo Crítico no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar os efeitos de Medo Crítico e Medo com Duração Máxima completa durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "bind_critical_attack": {
+                "name": "Chance de Imobilização Crítica no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Imobilização Crítica no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar os efeitos de Imobilização Crítica e Imobilização com Duração Máxima completa durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "weaken_critical_defense": {
+                "name": "Tolerância a Fraqueza no JxJ ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância a Fraqueza no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de efeitos de Fraqueza Crítica e Fraqueza com Duração Mínima durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "stun_critical_defense": {
+                "name": "Tolerância a Atordoamento no JxJ ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância a Atordoamento no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de efeitos de Atordoamento Crítico e Atordoamento com Duração Mínima durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "petrification_critical_defense": {
+                "name": "Tolerância a Petrificação no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância a Petrificação no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de efeitos de Petrificação Crítica e Petrificação com Duração Mínima durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "sleep_critical_defense": {
+                "name": "Tolerância a Sono no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância a Sono no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de efeitos de Sono Crítico e Sono com Duração Mínima durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "silence_critical_defense": {
+                "name": "Tolerância a Silêncio no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância a Silêncio no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de efeitos de Silêncio Crítico e Silêncio com Duração Mínima durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "blind_critical_defense": {
+                "name": "Tolerância a Medo no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância a Medo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de efeitos de Medo Crítico e Medo com Duração Mínima durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "bind_critical_defense": {
+                "name": "Tolerância a Imobilização no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Tolerância a Imobilização no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquivar de efeitos de Imobilização Crítica e Imobilização com Duração Mínima durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "weaken_double_attack": {
+                "name": "Fraqueza Dupla no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Fraqueza Dupla no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar Fraqueza Dupla, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "stun_double_attack": {
+                "name": "Atordoamento Duplo no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Atordoamento Duplo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar Atordoamento Duplo, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "petrification_double_attack": {
+                "name": "Petrificação Dupla no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Petrificação Dupla no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar Petrificação Dupla, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "sleep_double_attack": {
+                "name": "Sono Duplo no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Sono Duplo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar Sono Duplo, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "silence_double_attack": {
+                "name": "Silêncio Duplo no JxJ ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Silêncio Duplo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar Silêncio Duplo, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "blind_double_attack": {
+                "name": "Medo Duplo no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Medo Duplo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar Medo Duplo, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "bind_double_attack": {
+                "name": "Imobilização Dupla no JxJ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Imobilização Dupla no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de aplicar Imobilização Dupla, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "weaken_double_defense": {
+                "name": "Esquiva de Fraqueza Dupla no JxJ ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Fraqueza Dupla no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquiva de Fraqueza Dupla, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "stun_double_defense": {
+                "name": "Esquiva de Atordoamento Duplo no JxJ ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Atordoamento Duplo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquiva de Atordoamento Duplo, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "petrification_double_defense": {
+                "name": "Esquiva de Petrificação Duplo no JxJ ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Petrificação Dupla no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquiva de Petrificação Dupla, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "sleep_double_defense": {
+                "name": "Esquiva de Sono Duplo no JxJ ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Sono Duplo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquiva de Sono Duplo, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "silence_double_defense": {
+                "name": "Esquiva de Silêncio Duplo no JxJ ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Silêncio Duplo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquiva de Silêncio Duplo, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "blind_double_defense": {
+                "name": "Esquiva de Medo Duplo no JxJ ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Medo Duplo no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquiva de Medo Duplo, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "bind_double_defense": {
+                "name": "Esquiva de Imobilização Dupla no JxJ ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva de Imobilização Dupla no JxJ <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de esquiva de Imobilização Dupla, que dobra a duração do efeito durante o JxJ.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_bonus_attack_power": {
+                "name": "Bônus de Dano contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Chefes <span style=\"color: #FFFFFF\">{0}</span> ",
+                "tooltipDescription": "Aumenta o dano causado a chefes.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "boss_damage_reduction": {
+                "name": "Redução de Dano de Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Redução de Dano de Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Reduz o dano sofrido de Chefes.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "boss_melee_accuracy": {
+                "name": "Chance de Acerto Corpo a Corpo contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Corpo a Corpo contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques Corpo a Corpo e a chance de aplicar efeitos de CM com habilidades corpo a corpo contra chefes. Se o seu atributo for maior do que a Esquiva Corpo a Corpo do alvo, para cada 10 pontos de diferença, a Chance de Acerto aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_accuracy": {
+                "name": "Chance de Acerto à Distância contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto à Distância contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques à Distância e a chance de aplicar efeitos de CM com habilidades à distância contra chefes. Se o seu atributo for maior do que a Esquiva à Distância do alvo, para cada 10 pontos de diferença, a Chance de Acerto aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_accuracy": {
+                "name": "Chance de Acerto Mágico contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Chance de Acerto Mágico contra Chefes <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a Chance de Acerto de Ataques Mágicos e a chance de aplicar efeitos de CM com habilidades mágicas contra chefes. Se o seu atributo for maior do que a Esquiva Mágica do alvo, para cada 10 pontos de diferença, a Chance de Acerto aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_melee_evasion": {
+                "name": "Esquiva Corpo a Corpo contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva Corpo a Corpo contra Chefe <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de Esquiva Corpo a Corpo contra chefes. Se o seu atributo for maior do que a Chance de Acerto do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_evasion": {
+                "name": "Esquiva à Distância contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva à Distância contra Chefe <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de Esquiva à Distância contra chefes. Se o seu atributo for maior do que a Chance de Acerto do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_evasion": {
+                "name": "Esquiva Mágica contra Chefes",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva Mágica contra Chefe <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta a chance de Esquiva Mágica contra chefes. Se o seu atributo for maior do que a Chance de Acerto do alvo, para cada 10 pontos de diferença, a chance aumentará em cerca de 1%. À medida que a diferença aumenta, a eficiência é reduzida.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "gathering_speed": {
+                "name": "Velocidade de Coleta",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Velocidade de Coleta",
+                "tooltipDescription": "A velocidade com que os itens são coletados.",
+                "multiplier": 0.001,
+                "invert": false
+            },
+            "gathering_double_chance": {
+                "name": "Coleta Dupla",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Coleta Dupla",
+                "tooltipDescription": "Obtenha mais itens ao coletar.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "gathering_critical_chance": {
+                "name": "Chance de Obter Item Especial",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Chance de Obter Item Especial",
+                "tooltipDescription": "A chance de obter itens especiais ao coletar.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "polymorph_duration": {
+                "name": "Duração de Invocação ▲",
+                "valueFormat": "{0}s",
+                "tooltipTitle": "187",
+                "tooltipDescription": "187",
+                "multiplier": 0.001,
+                "invert": false
+            },
+            "evasion": {
+                "name": "Esquiva Total",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Esquiva Total <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "189",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "dash_fast_move_speed_modifier": {
+                "name": "Bônus de Acel. de Transformação Acelerada",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Bônus de Acel. de Transformação Acelerada <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o bônus da Taxa de Aceleração enquanto em Transformação Acelerada.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "dash_normal_move_speed_modifier": {
+                "name": "Bônus de Vel. de Transformação Acelerada",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Bônus de Vel. de Transformação Acelerada <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o bônus de Velocidade de Movimento enquanto em Transformação Acelerada.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "swim_fast_move_speed_modifier": {
+                "name": "Bônus de Acel. de Transformação Aquática",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Bônus de Acel. de Transformação Aquática <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o bônus da Taxa de Aceleração enquanto em Transformação Aquática.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "swim_normal_move_speed_modifier": {
+                "name": "Bônus de Vel. de Transformação Aquática",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Bônus de Vel. de Transformação Aquática <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o bônus da Velocidade de Movimento enquanto em Transformação Aquática.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "glide_fast_move_speed_modifier": {
+                "name": "Bônus de Acel. de Transformação Aérea",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Bônus de Acel. de Transformação Aérea <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o bônus da Taxa de Aceleração enquanto em Transformação Aérea.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "glide_normal_move_speed_modifier": {
+                "name": "Bônus de Vel. de Transformação Aérea",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Bônus de Vel. de Transformação Aérea <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o bônus da Velocidade de Movimento enquanto em Transformação Aérea.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "stamina_consumption_modifier": {
+                "name": "Eficiência do Custo de Vigor ▲ ",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Eficiência do Custo de Vigor de Transformação ▲",
+                "tooltipDescription": "Aumenta a Eficiência do Custo de Vigor enquanto acelerando, nadando e planando.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "shield_block_chance_penetration": {
+                "name": "Chance de Penetração de Bloqueio de Escudo",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Chance de Penetração de Bloqueio de Escudo <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Reduz a chance de um ataque ser bloqueado por escudo.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "critical_damage_dealt_modifier": {
+                "name": "Dano Crítico",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Dano Crítico <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta o dano após Acertos Críticos.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "critical_damage_taken_modifier": {
+                "name": "Redução de Dano Crítico",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Redução de Dano Crítico <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Reduz o dano sofrido de um Acerto Crítico.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "pvp_damage_dealt_modifier": {
+                "name": "Dano no JxJ ▲",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Aumenta o Dano no JxJ em <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta o dano causado no JxJ.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "pvp_damage_taken_modifier": {
+                "name": "Dano no JxJ Sofrido",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Dano no JxJ Sofrido <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Reduz o dano sofrido no JxJ.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "attack_range_modifier": {
+                "name": "Aumenta o Alcance de Ataque",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Alcance ▲ <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "60",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "bonus_grankus_attack_power": {
+                "name": "Bônus de Dano contra Bárbaros",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Humanoides <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Humanoides.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "bonus_demon_attack_power": {
+                "name": "Bônus de Dano contra Demônios",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Demônios <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Demônios.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "bonus_undead_attack_power": {
+                "name": "Bônus de Dano contra Mortos-vivos",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Mortos-vivos <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Mortos-vivos.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "bonus_creation_attack_power": {
+                "name": "Bônus de Dano contra Construtos",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Construtos <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Construtos.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "bonus_animal_attack_power": {
+                "name": "Bônus de Dano contra Selvagens",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bônus de Dano contra Selvagem <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Aumenta o dano causado aos Selvagens.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "move_speed": {
+                "name": "Velocidade de Movimento ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Velocidade de Movimento <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Velocidade de movimento básica. Também afeta a distância de pulo.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "attack_speed_modifier": {
+                "name": "Velocidade de Ataque Adicional",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Velocidade de Ataque <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "A porcentagem aumentada na Velocidade de Ataque.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "aura_effect_boost": {
+                "name": "Efeito de Aura",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Efeitos de Aura <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta os efeitos de Aura.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "aura_radius_modifier": {
+                "name": "Alcance da Aura",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Aumenta o Alcance da Aura <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a área de efeito dos efeitos de Aura.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "heal_taken_modifier": {
+                "name": "Efeito de Recuperação",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Efeito de Recuperação <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a quantidade recuperada ao restaurar Vida.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "heal_modifier": {
+                "name": "Cura",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Cura <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a quantidade de cura fornecida por habilidades.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "skill_heal_taken_modifier": {
+                "name": "Cura Recebida",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Cura Recebida <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Aumenta a quantidade curada por habilidades usadas no usuário.",
+                "multiplier": 0.01,
+                "invert": false
+            }
+        }
+    }
+}
