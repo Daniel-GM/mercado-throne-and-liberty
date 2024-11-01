@@ -48,7 +48,7 @@ async function main(categoryFilter, searchQuery, bossFilter, selectedRegions) {
 
 async function fetchAuctionHouseData(region) {
   const apiUrl = `https://questlog.gg/throne-and-liberty/api/trpc/actionHouse.getAuctionHouse?input=${encodeURIComponent(`{"language":"pt","regionId":"${region}"}`)}`;
-  const proxyUrl = `https://frosty-breeze-a53c.danielgomesmoura.workers.dev/?url=${encodeURIComponent(apiUrl)}`;
+  const proxyUrl = `https://frosty-breeze-a53c.danielgomesmoura.workers.dev?url=${encodeURIComponent(apiUrl)}`;
 
   try {
     const response = await fetch(proxyUrl, {
@@ -90,13 +90,13 @@ function generate(saFMap, naeEMap, categoryFilter = '', searchQuery = '', bossFi
     htmlContent += `
       <div class="card mb-3 shadow-sm">
         <div class="row g-0">
-          <div class="col-md-2 d-flex align-items-center justify-content-center p-3">
-            <img src="https://cdn.questlog.gg/throne-and-liberty${itemImg}.webp" class="img-fluid rounded" alt="${itemSaF.name}" style="max-height: 100px;">
-          </div>
-          <div class="col-md-10">
-            <div class="card-header text-white" style="background-color: ${backgroundColor};">
-              <h2 class="h6 mb-0">${itemSaF.name}</h2>
-              <h2 class="h6 mb-0">${itemSaF.id}</h2>
+          <div class="col-md-10 w-100">
+            <div class="card-header text-white d-flex align-items-center p-0" style="background-color: ${backgroundColor};">
+              <img src="https://cdn.questlog.gg/throne-and-liberty${itemImg}.webp" class="img-fluid rounded" alt="${itemSaF.name}" style="max-height: 100px;">
+              <div>
+                <h2 class="h6 mb-0">${itemSaF.name}</h2>
+                <h2 class="h6 mb-0">${itemSaF.id}</h2>
+              </div>
             </div>
             <div class="card-body">
     `;
@@ -115,18 +115,18 @@ function generate(saFMap, naeEMap, categoryFilter = '', searchQuery = '', bossFi
       const inStockNaeE = traitItemNaeE ? traitItemNaeE.inStock : '0';
 
       htmlContent += `
-        <div class="row align-items-center mb-2 justify-content-around">
+        <div class="row align-items-center mb-3 justify-content-around">
           <div class="col-4 col-md-3">
             <strong>${traitName}</strong>
           </div>
           <div class="col-4 col-md-3">
-            <span class="fw-bold">${selectedRegions[0] ? selectedRegions[0].toUpperCase() : 'Null'}:</span>
+            <span class="fw-light" style="padding: 2px 10px; font-size: 0.75rem;; border: 1px solid #ccc; border-radius: 100px">${selectedRegions[0] ? selectedRegions[0].toUpperCase() : 'Null'}</span>
             <span>${minPriceSaF}</span>
             <img class="luc ms-1" src="https://cdn.questlog.gg/throne-and-liberty/common/lucent.webp" alt="luc" width="14">
             <span>(${inStockSaF})</span>
           </div>
           <div class="col-4 col-md-3">
-            <span class="fw-bold">${selectedRegions[1] ? selectedRegions[1].toUpperCase() : 'Null'}:</span>
+            <span class="fw-light" style="padding: 2px 10px; font-size: 0.75rem;; border: 1px solid #ccc; border-radius: 100px" style="border: 1px solid #000">${selectedRegions[1] ? selectedRegions[1].toUpperCase() : 'Null'}</span>
             <span>${minPriceNaeE}</span>
             <img class="luc ms-1" src="https://cdn.questlog.gg/throne-and-liberty/common/lucent.webp" alt="luc" width="14">
             <span>(${inStockNaeE})</span>
@@ -194,4 +194,4 @@ document.getElementById('checkbox-region').addEventListener('change', async (eve
   await main(categoryFilter, searchQuery, bossFilter, selectedRegions);
 });
 
-main(categoryFilter = '', searchQuery = '', bossFilter = '', ["nae-f", "sa-f"])
+main(categoryFilter = '', searchQuery = '', bossFilter = '', ["nae-e", "sa-f"])
