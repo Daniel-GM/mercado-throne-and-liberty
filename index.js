@@ -48,7 +48,7 @@ async function main(categoryFilter, searchQuery, bossFilter, selectedRegions) {
 
 async function fetchAuctionHouseData(region) {
   const apiUrl = `https://questlog.gg/throne-and-liberty/api/trpc/actionHouse.getAuctionHouse?input=${encodeURIComponent(`{"language":"pt","regionId":"${region}"}`)}`;
-  const proxyUrl = `https://floral-snowflake-f342.danielgomesmoura-telecom.workers.dev?url=${encodeURIComponent(apiUrl)}`;
+  const proxyUrl = `https://frosty-breeze-a53c.danielgomesmoura.workers.dev/?url=${encodeURIComponent(apiUrl)}`;
 
   try {
     const response = await fetch(proxyUrl, {
