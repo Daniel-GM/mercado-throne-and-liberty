@@ -47,7 +47,7 @@ async function main(categoryFilter, searchQuery, bossFilter, selectedRegions) {
 }
 
 async function fetchAuctionHouseData(region) {
-  const proxyUrl = `./proxy.php?region=${region}`
+  const proxyUrl = `https://questlog.gg/throne-and-liberty/api/trpc/actionHouse.getAuctionHouse?input=%7B%22language%22%3A%22pt%22%2C%22regionId%22%3A%22${region}%22%7D`
 
   try {
     const response = await fetch(proxyUrl, {
