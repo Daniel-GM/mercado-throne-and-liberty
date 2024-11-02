@@ -146,36 +146,36 @@ function generate(saFMap, naeEMap, categoryFilter = '', searchQuery = '', bossFi
   document.getElementById('main').innerHTML = htmlContent;
 }
 
-document.getElementById('categoryFilter').addEventListener('change', async () => {
-  const selectedCheckboxes = Array.from(document.querySelectorAll('#checkbox-region input[type="checkbox"]:checked'));
+// document.getElementById('categoryFilter').addEventListener('change', async () => {
+//   const selectedCheckboxes = Array.from(document.querySelectorAll('#checkbox-region input[type="checkbox"]:checked'));
   
-  const categoryFilter = document.getElementById('categoryFilter').value;
-  const searchQuery = document.getElementById('searchInput').value;
-  const selectedRegions = selectedCheckboxes.map(checkbox => checkbox.id);
+//   const categoryFilter = document.getElementById('categoryFilter').value;
+//   const searchQuery = document.getElementById('searchInput').value;
+//   const selectedRegions = selectedCheckboxes.map(checkbox => checkbox.id);
 
-  await main(categoryFilter, searchQuery, bossFilter, selectedRegions);
-});
+//   await main(categoryFilter, searchQuery, bossFilter, selectedRegions);
+// });
 
-document.getElementById('searchInput').addEventListener('input', async () => {
-  const selectedCheckboxes = Array.from(document.querySelectorAll('#checkbox-region input[type="checkbox"]:checked'));
+// document.getElementById('searchInput').addEventListener('input', async () => {
+//   const selectedCheckboxes = Array.from(document.querySelectorAll('#checkbox-region input[type="checkbox"]:checked'));
   
-  const categoryFilter = document.getElementById('categoryFilter').value;
-  const searchQuery = document.getElementById('searchInput').value;
-  const selectedRegions = selectedCheckboxes.map(checkbox => checkbox.id);
+//   const categoryFilter = document.getElementById('categoryFilter').value;
+//   const searchQuery = document.getElementById('searchInput').value;
+//   const selectedRegions = selectedCheckboxes.map(checkbox => checkbox.id);
 
-  await main(categoryFilter, searchQuery, bossFilter, selectedRegions);
-});
+//   await main(categoryFilter, searchQuery, bossFilter, selectedRegions);
+// });
 
-document.getElementById('bossFilter').addEventListener('change', async () => {
-  const selectedCheckboxes = Array.from(document.querySelectorAll('#checkbox-region input[type="checkbox"]:checked'));
+// document.getElementById('bossFilter').addEventListener('change', async () => {
+//   const selectedCheckboxes = Array.from(document.querySelectorAll('#checkbox-region input[type="checkbox"]:checked'));
   
-  const categoryFilter = document.getElementById('categoryFilter').value;
-  const searchQuery = document.getElementById('searchInput').value;
-  const bossFilter = document.getElementById('bossFilter').value;
-  const selectedRegions = selectedCheckboxes.map(checkbox => checkbox.id);
+//   const categoryFilter = document.getElementById('categoryFilter').value;
+//   const searchQuery = document.getElementById('searchInput').value;
+//   const bossFilter = document.getElementById('bossFilter').value;
+//   const selectedRegions = selectedCheckboxes.map(checkbox => checkbox.id);
 
-  await main(categoryFilter, searchQuery, bossFilter, selectedRegions);
-});
+//   await main(categoryFilter, searchQuery, bossFilter, selectedRegions);
+// });
 
 document.getElementById('checkbox-region').addEventListener('change', async (event) => {
   const selectedCheckboxes = Array.from(document.querySelectorAll('#checkbox-region input[type="checkbox"]:checked'));
@@ -185,13 +185,21 @@ document.getElementById('checkbox-region').addEventListener('change', async (eve
     alert("Você pode selecionar no máximo duas regiões.");
     return;
   }
+});
 
+document.getElementById('filter').addEventListener('click', async () => {
+  const selectedCheckboxes = Array.from(document.querySelectorAll('#checkbox-region input[type="checkbox"]:checked'));
+  
   const categoryFilter = document.getElementById('categoryFilter').value;
   const searchQuery = document.getElementById('searchInput').value;
   const bossFilter = document.getElementById('bossFilter').value;
   const selectedRegions = selectedCheckboxes.map(checkbox => checkbox.id);
-
+  
   await main(categoryFilter, searchQuery, bossFilter, selectedRegions);
-});
+})
+
+document.getElementById('clean-filter').addEventListener('click', async () => {
+  main(categoryFilter = '', searchQuery = '', bossFilter = '', ["nae-e", "sa-f"])
+})
 
 main(categoryFilter = '', searchQuery = '', bossFilter = '', ["nae-e", "sa-f"])
