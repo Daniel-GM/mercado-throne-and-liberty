@@ -1,10 +1,12 @@
 let traitMapping = {}
 
-async function loadTraitMapping() {
+async function loadTraitMapping(language) {
+  const path = `./traits/${language}Status.json`
+  
   try {
-    const response = await fetch('./idStatus.json');
+    const response = await fetch(path);
     if (!response.ok) {
-      throw new Error('Erro ao carregar idStatus.json');
+      throw new Error(`Erro ao carregar ${language}Status.json`);
     }
     const data = await response.json();
     traitMapping = data.result.data;
@@ -23,9 +25,7 @@ function getBackgroundColor(grade) {
   }
 }
 
-async function main(categoryFilter, searchQuery, bossFilter, selectedRegions) {
-  await loadTraitMapping();
-
+async function main(categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, selectedRegions) {
   const [region1, region2] = selectedRegions;
 
   const region1Data = await fetchAuctionHouseData(region1);
@@ -34,11 +34,13 @@ async function main(categoryFilter, searchQuery, bossFilter, selectedRegions) {
   const region1Map = Object.fromEntries(region1Data.map(item => [item.id, item]));
   const region2Map = Object.fromEntries(region2Data.map(item => [item.id, item]));
 
-  generate(region1Map, region2Map, categoryFilter, searchQuery, bossFilter, [region1, region2]);
+  generate(region1Map, region2Map, categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, [region1, region2]);
 }
 
 async function fetchAuctionHouseData(region) {
-  const apiUrl = `https://questlog.gg/throne-and-liberty/api/trpc/actionHouse.getAuctionHouse?input=${encodeURIComponent(`{"language":"pt","regionId":"${region}"}`)}`;
+  const language = document.getElementById('language').value
+  await loadTraitMapping(language);
+  const apiUrl = `https://questlog.gg/throne-and-liberty/api/trpc/actionHouse.getAuctionHouse?input=${encodeURIComponent(`{"language":"${language}","regionId":"${region}"}`)}`;
   const proxyUrl = `https://frosty-breeze-a53c.danielgomesmoura.workers.dev?url=${encodeURIComponent(apiUrl)}`;
 
   try {
@@ -61,15 +63,17 @@ async function fetchAuctionHouseData(region) {
   }
 }
 
-function generate(saFMap, naeEMap, categoryFilter = '', searchQuery = '', bossFilter = '', selectedRegions) {
+function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', selectedRegions) {
   let htmlContent = '';
 
   const filteredKeys = Object.keys(saFMap).filter(id => {
     const item = saFMap[id];
     const isCategoryMatch = !categoryFilter || item.mainCategory === categoryFilter;
+    const isSubCategoryMatch = !subcategoryFilter || item.subCategory === subcategoryFilter || item.subSubCategory === subcategoryFilter;
     const isSearchMatch = !searchQuery || item.name.toLowerCase().includes(searchQuery.toLowerCase());
     const isBossMatch = !bossFilter || (bossDrops[bossFilter] && bossDrops[bossFilter].includes(id));
-    return isCategoryMatch && isSearchMatch && isBossMatch;
+    const isWorldBossMatch = !worldbossFilter || (worldbossDrops[worldbossFilter] && worldbossDrops[worldbossFilter].includes(id));
+    return isCategoryMatch && isSubCategoryMatch && isSearchMatch && isBossMatch && isWorldBossMatch;
   });
 
   filteredKeys.forEach(id => {
@@ -137,4 +141,4 @@ function generate(saFMap, naeEMap, categoryFilter = '', searchQuery = '', bossFi
   document.getElementById('main').innerHTML = htmlContent;
 }
 
-main(categoryFilter = '', searchQuery = '', bossFilter = '', ["nae-e", "sa-f"])
+main(categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', ["nae-e", "sa-f"])

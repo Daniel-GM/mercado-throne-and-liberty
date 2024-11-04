@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/darkmode.css">
+    <link rel="stylesheet" href="./style/responsivo.css">
     <link rel="icon" type="image/x-icon" href="https://daniel-gm.github.io/TOF-eficiencia/img/icon/ruby.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,86 +15,156 @@
     <title>Auction House</title>
 </head>
 
-<body>
-    <div class="filters mb-4 w-50 m-auto">
-        <input type="text" id="searchInput" class="form-control mt-2" placeholder="Buscar...">
+<body class="dark-mode">
+    <div class="w-50 m-auto mt-3 text-end">
+        <button id="toggleDarkMode" class="btn btn-secondary">Modo Claro</button>
+    </div>
 
-        <select id="categoryFilter" class="form-select mt-2">
-            <option value="">Todas as Categorias</option>
-            <option value="weapons">Armas</option>
-            <option value="armor">Armaduras</option>
-        </select>
+    <div class="w-50 m-auto mt-3 mb-3">
+        <div class="card">
+            <div class="card-body">
+                <h5 class="card-title">Pesquisar Itens</h5>
+    
+                <input type="text" id="searchInput" class="form-control mt-2 mb-3" placeholder="Buscar...">
+    
+                <select id="language" class="form-select mb-3">
+                    <option value="pt">Idioma</option>
+                    <option value="pt" selected>Português</option>
+                    <option value="en">Inglês</option>
+                </select>
 
-        <select id="bossFilter" class="form-select mt-2">
-            <option value="">Todos os Bosses</option>
-            <option value="Karnix">Karnix</option>
-            <option value="Shaikal">Shaikal</option>
-            <option value="Quimer-Rex">Quimer-Rex</option>
-            <option value="Duque Magna">Duque Magna</option>
-            <option value="Toublek">Toublek</option>
-            <option value="Lequirus">Lequirus</option>
-        </select>
-
-        <form id="checkbox-region" class="d-flex justify-content-evenly flex-wrap">
-            <div>
-                <input type="checkbox" id="as-e" name="as-e">
-                <label for="as-e">as-e</label><br>
+                <div class="row row-cols-1 row-cols-md-2 g-2">
+                    <div class="col">
+                        <select id="categoryFilter" class="form-select">
+                            <option value="">Todas as Categorias</option>
+                            <option value="weapons">Armas</option>
+                            <option value="armor">Armaduras</option>
+                            <option value="traitextract">Extrair</option>
+                            <option value="accessories">Acessórios</option>
+                            <option value="rubbingscroll">Litografia</option>
+                            <option value="material">Material</option>
+                            <option value="usable">Consumível</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select id="subcategoryFilter" class="form-select">
+                            <option value="">Todas as Subcategorias</option>
+                            <option value="sword">Espada</option>
+                            <option value="sword2h">Espada de Duas Mãos</option>
+                            <option value="dagger">Adaga</option>
+                            <option value="bow">Arco</option>
+                            <option value="crossbow">Balestra</option>
+                            <option value="staff">Cajado</option>
+                            <option value="wand">Varinha</option>
+                            <option value="head">Cabeça</option>
+                            <option value="chest">Peitoral</option>
+                            <option value="hands">Mãos</option>
+                            <option value="legs">Pernas</option>
+                            <option value="feet">Pés</option>
+                            <option value="cloak">Manto</option>
+                            <option value="necklace">Colar</option>
+                            <option value="belt">Cinto</option>
+                            <option value="bracelet">Bracelete</option>
+                            <option value="ring">Anel</option>
+                            <option value="food">Comida</option>
+                            <option value="materialjewel">Material de Joalheria</option>
+                            <option value="materialsub">Material Suplementar</option>
+                            <option value="sharingfood">Comida Compartilhável</option>
+                        </select>
+                    </div>
+                </div>
+    
+                <div class="row row-cols-1 row-cols-md-2 g-2">
+                    <div class="col">
+                        <select id="bossFilter" class="form-select">
+                            <option value="">Dungeon Boss</option>
+                            <option value="Karnix">Karnix</option>
+                            <option value="Shaikal">Shaikal</option>
+                            <option value="Quimer-Rex">Quimer-Rex</option>
+                            <option value="Duque Magna">Duque Magna</option>
+                            <option value="Toublek">Toublek</option>
+                            <option value="Lequirus">Lequirus</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <select id="worldbossFilter" class="form-select mb-3">
+                            <option value="">World Boss</option>
+                            <option value="Tevent">Tevent</option>
+                            <option value="Queen Bellandir">Queen Bellandir</option>
+                            <option value="Talus">Talus</option>
+                            <option value="Nirma">Nirma</option>
+                            <option value="Morokai">Morokai</option>
+                            <option value="Minezerok">Minezerok</option>
+                            <option value="Malakar">Malakar</option>
+                            <option value="kowazan">kowazan</option>
+                            <option value="junobote">junobote</option>
+                            <option value="Grand Aelon">Grand Aelon</option>
+                            <option value="Excavator-9">Excavator-9</option>
+                            <option value="Cornelius">Cornelius</option>
+                            <option value="Chernobog">Chernobog</option>
+                            <option value="Aridus">Aridus</option>
+                            <option value="Ahzreil">Ahzreil</option>
+                            <option value="Adentus">Adentus</option>
+                        </select>
+                    </div>
+                </div>
+    
+    
+                <form id="checkbox-region" class="d-flex justify-content-evenly flex-wrap mt-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="as-e" name="as-e">
+                        <label class="form-check-label" for="as-e">as-e</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="as-f" name="as-f">
+                        <label class="form-check-label" for="as-f">as-f</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="eu-e" name="eu-e">
+                        <label class="form-check-label" for="eu-e">eu-e</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="eu-f" name="eu-f">
+                        <label class="form-check-label" for="eu-f">eu-f</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="nae-e" name="nae-e" checked>
+                        <label class="form-check-label" for="nae-e">nae-e</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="nae-f" name="nae-f">
+                        <label class="form-check-label" for="nae-f">nae-f</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="naw-e" name="naw-e">
+                        <label class="form-check-label" for="naw-e">naw-e</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="naw-f" name="naw-f">
+                        <label class="form-check-label" for="naw-f">naw-f</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="sa-e" name="sa-e">
+                        <label class="form-check-label" for="sa-e">sa-e</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="sa-f" name="sa-f" checked>
+                        <label class="form-check-label" for="sa-f">sa-f</label>
+                    </div>
+                </form>
+    
+                <button id="filter" class="btn btn-dark w-100 mt-3">Buscar</button>
+                <button id="clean-filter" class="btn btn-danger w-100 mt-2">Limpar filtros</button>
             </div>
-
-            <div>
-                <input type="checkbox" id="as-f" name="as-f">
-                <label for="as-f">as-f</label><br>
-            </div>
-
-            <div>
-                <input type="checkbox" id="eu-e" name="eu-e">
-                <label for="eu-e">eu-e</label><br>
-            </div>
-
-            <div>
-                <input type="checkbox" id="eu-f" name="eu-f">
-                <label for="eu-f">eu-f</label><br>
-            </div>
-
-            <div>
-                <input type="checkbox" id="nae-e" name="nae-e" checked>
-                <label for="nae-e">nae-e</label><br>
-            </div>
-
-            <div>
-                <input type="checkbox" id="nae-f" name="nae-f">
-                <label for="nae-f">nae-f</label><br>
-            </div>
-
-            <div>
-                <input type="checkbox" id="naw-e" name="naw-e">
-                <label for="naw-e">naw-e</label><br>
-            </div>
-
-            <div>
-                <input type="checkbox" id="naw-f" name="naw-f">
-                <label for="naw-f">naw-f</label><br>
-            </div>
-
-            <div>
-                <input type="checkbox" id="sa-e" name="sa-e">
-                <label for="sa-e">sa-e</label><br>
-            </div>
-
-            <div>
-                <input type="checkbox" id="sa-f" name="sa-f" checked>
-                <label for="sa-f">sa-f</label><br>
-            </div>
-        </form>
-
-        <button id="filter" class="mt-2 w-100 btn-primary">Filtrar</button>
-        <button id="clean-filter" class="mt-2 w-100 btn-danger">Limpar filtros</button>
+        </div>
     </div>
 
     <div id="main" class="w-50 m-auto"></div>
+
     <script src="./script/index.js"></script>
     <script src="./script/listening.js"></script>
     <script src="./script/itemBoss.js"></script>
+    <script src="./script/darkmode.js"></script>
 </body>
 
 </html>

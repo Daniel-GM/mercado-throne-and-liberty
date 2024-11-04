@@ -1,0 +1,1934 @@
+{
+    "result": {
+        "data": {
+            "dropped_item_pickable": {
+                "name": "Auto Item Pick Up",
+                "valueFormat": " {0}",
+                "tooltipTitle": "113",
+                "tooltipDescription": "113",
+                "multiplier": 1,
+                "invert": false
+            },
+            "hp_max": {
+                "name": "Max Health",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Max Health <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Characters die if their Health is completely depleted.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "hp_regen": {
+                "name": "Health Regen",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Health Regen <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "The amount of Health regenerated every 10s.",
+                "multiplier": 0.001,
+                "invert": false
+            },
+            "cost_max": {
+                "name": "Max Mana",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Max Mana <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "The amount of energy for using skills.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "cost_regen": {
+                "name": "Mana Regen",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Mana Regen <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "The amount of Mana regenerated every 10s.",
+                "multiplier": 0.001,
+                "invert": false
+            },
+            "cost_consumption_modifier": {
+                "name": "Mana Cost Efficiency",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Mana Cost Efficiency <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Reduces the amount of Mana used for skills.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "skill_cooldown_modifier": {
+                "name": "Cooldown Speed",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Cooldown Speed <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Decreases cooldown of skills.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "movement_speed_modifier": {
+                "name": "Movement Speed ",
+                "valueFormat": " {0}%",
+                "tooltipTitle": "120",
+                "tooltipDescription": "120",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_exp_acquired": {
+                "name": "EXP Bonus",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "EXP Bonus <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases EXP gained.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_gold_acquired": {
+                "name": "Sollant Bonus",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Sollant Bonus <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases amount of Sollant gained.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_item_drop": {
+                "name": "Item Chance",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Item Chance <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the chance to acquire items.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "earn_dungeon_point_modifier": {
+                "name": "Abyssal Contract Token Bonus",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Abyssal Contract Token Bonus <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Abyssal Contract Token Bonus increases.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "spend_dungeon_point_modifier": {
+                "name": "Abyssal Contract Token Efficiency",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Abyssal Contract Token Efficiency <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the efficiency of using Abyssal Contract Tokens.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "pick_extra_material_chance": {
+                "name": "{0} Acquisition Chance Increase",
+                "valueFormat": " {0}%",
+                "tooltipTitle": "170",
+                "tooltipDescription": "170",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "magic_doll_heal_modifier": {
+                "name": "Amitoi Healing",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Amitoi Healing <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the amount of Health restored by Amitoi.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "move_speed_modifier": {
+                "name": "Movement Speed",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Movement Speed <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "93",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "skill_power_amplification": {
+                "name": "Skill Damage Boost",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Skill Damage Boost <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage and recovery from skills. For every 10 points, chance increases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "skill_power_resistance": {
+                "name": "Skill Damage Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Skill Damage Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from skills. For every 10 points, chance increases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "buff_given_duration_modifier": {
+                "name": "Buff Duration",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Buff Duration <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the duration of buffs.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "debuff_taken_duration_modifier": {
+                "name": "Debuff Duration",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Debuff Duration <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Decreases the duration of incoming debuff effects.",
+                "multiplier": 0.01,
+                "invert": true
+            },
+            "attack_speed_main_hand": {
+                "name": "Attack Speed",
+                "valueFormat": "{0}s",
+                "tooltipTitle": "Attack Speed <span style=\"color: #FFFFFF\">{0}s</span>",
+                "tooltipDescription": "The time it takes to deal normal attacks and skill attacks with your main weapon.",
+                "multiplier": 0.001,
+                "invert": true
+            },
+            "adjust_resource_drop": {
+                "name": "Crafting Material Chance",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Crafting Material Chance <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the chance to acquire Crafting Materials.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "attack_range_main_hand": {
+                "name": "Range",
+                "valueFormat": "{0}m",
+                "tooltipTitle": "Main Weapon Range <span style=\"color: #FFFFFF\">{0}m</span>",
+                "tooltipDescription": "The attack range of the main weapon. The attack range is limited to a maximum of 30m.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "melee_armor": {
+                "name": "Melee Defense",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Melee Defense <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from melee attacks.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "range_armor": {
+                "name": "Ranged Defense",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ranged Defense <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from ranged attacks.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "magic_armor": {
+                "name": "Magic Defense",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Magic Defense <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from magic attacks.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "shield_block_chance": {
+                "name": "Shield Block Chance",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Shield Block Chance <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The chance of blocking an attack with your shield. On a successful block, decreases damage taken and prevents CC effects other than Weakened.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "pvp_melee_critical_attack": {
+                "name": "PvP Melee Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Melee Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of melee attacks landing as critical hits and dealing Max Damage in PvP. If your stat is higher than the target's Melee Endurance, for every 10 points of difference, Critical Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_critical_attack": {
+                "name": "PvP Ranged Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Ranged Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of ranged attacks landing as critical hits and dealing Max Damage in PvP. If your stat is higher than the target's Ranged Endurance, for every 10 points of difference, Critical Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_critical_attack": {
+                "name": "PvP Magic Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Magic Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of magic attacks landing as critical hits and dealing Max Damage in PvP. If your stat is higher than the target's Magic Endurance, for every 10 points of difference, Critical Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_melee_critical_defense": {
+                "name": "PvP Melee Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Melee Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from melee attacks in PvP. If your stat is higher than the target's Melee Critical Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_critical_defense": {
+                "name": "PvP Ranged Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Ranged Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from ranged attacks in PvP. If your stat is higher than the target's Ranged Critical Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_critical_defense": {
+                "name": "PvP Magic Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Magic Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from magic attacks in PvP. If your stat is higher than the target's Magic Critical Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "str": {
+                "name": "Strength",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Strength <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Serves as the source of physical prowess. Provides strong Defense in addition to increasing Max Health, Health Regen, Max Damage, and Min Damage.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "pvp_melee_double_attack": {
+                "name": "PvP Melee Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Melee Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to deal double damage with Melee Heavy Attacks during PvP. If your stat is higher than the target's Melee Heavy Attack Evasion, for every 10 points of difference, increase the chance by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_double_attack": {
+                "name": "PvP Ranged Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Ranged Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to deal double damage with Ranged Heavy Attacks during PvP. If your stat is higher than the target's Ranged Heavy Attack Evasion, for every 10 points of difference, increase the chance by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_double_attack": {
+                "name": "PvP Magic Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Magic Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to deal double damage with Magic Heavy Attack during PvP. If your stat is higher than the target's Magic Heavy Attack Evasion, for every 10 points of difference, increase the chance by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_melee_double_defense": {
+                "name": "PvP Melee Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Melee Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases the chance to get hit by Melee Heavy Attack and take double damage in PvP. For every 10 points, chance decreases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_double_defense": {
+                "name": "PvP Ranged Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Ranged Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Getting hit by Ranged Heavy Attack decreases the chance to take double damage during PvP. For every 10 points, chance decreases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_double_defense": {
+                "name": "PvP Magic Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Magic Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Getting hit by Magic Heavy Attack decreases the chance to take double damage during PvP. For every 10 points, chance decreases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "dex": {
+                "name": "Dexterity",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Dexterity <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Serves as the source of nimbleness. Increases quickness and critical attacks in addition to Evasion and Max Damage.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "int": {
+                "name": "Wisdom",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Wisdom <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Serves as the source of mental prowess. Increases Max Mana and Mana Regen in addition to cooldown abilities and Max Damage.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "per": {
+                "name": "Perception",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Perception <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Serves as the source of insight and awareness. Heightens awareness during battle. Increases the accuracy of attacks, CC effects, the duration of Buffs, and Max Damage and Min Damage.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "boss_melee_critical_attack": {
+                "name": "Boss Melee Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Melee Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of melee attacks landing as critical hits and dealing Max Damage against bosses. If your stat is higher than the target's Melee Endurance, for every 10 points of difference, Critical Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_critical_attack": {
+                "name": "Boss Ranged Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Ranged Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of ranged attacks landing as critical hits and dealing Max Damage against bosses. If your stat is higher than the target's Ranged Endurance, for every 10 points of difference, Critical Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_critical_attack": {
+                "name": "Boss Magic Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Magic Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of magic attacks landing as critical hits and dealing Max Damage against bosses. If your stat is higher than the target's Magic Endurance, for every 10 points of difference, Critical Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_melee_critical_defense": {
+                "name": "Boss Melee Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Melee Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from melee attacks by bosses. If your stat is higher than the target's Melee Critical, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_critical_defense": {
+                "name": "Boss Ranged Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Ranged Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from ranged attacks by bosses. If your stat is higher than the target's Ranged Critical, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_critical_defense": {
+                "name": "Boss Magic Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Magic Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from magic attacks by bosses. If your stat is higher than the target's Magic Critical Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_melee_double_attack": {
+                "name": "Boss Melee Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Melee Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to deal double damage with Melee Heavy Attacks against bosses. If your stat is higher than the target's Melee Heavy Attack Evasion, for every 10 points of difference, increase the chance by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_double_attack": {
+                "name": "Boss Ranged Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Ranged Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to deal double damage with Ranged Heavy Attacks against bosses. If your stat is higher than the target's Ranged Heavy Attack Evasion, for every 10 points of difference, increase the chance by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_double_attack": {
+                "name": "Boss Magic Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Magic Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to deal double damage with Magic Heavy Attacks against bosses. If your stat is higher than the target's Magic Heavy Attack Evasion, for every 10 points of difference, increase the chance by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_melee_double_defense": {
+                "name": "Boss Melee Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Melee Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Getting hit by Boss's Melee Heavy Attack decreases the chance to take double damage. For every 10 points, decrease the chance by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_double_defense": {
+                "name": "Boss Ranged Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Ranged Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Getting hit by Boss's Ranged Heavy Attack decreases the chance to take double damage. For every 10 points, decrease the chance by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_double_defense": {
+                "name": "Boss Magic Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Magic Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Getting hit by Boss's Magic Heavy Attack decreases the chance to take double damage. For every 10 points, decrease the chance by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_accuracy": {
+                "name": "Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of normal attacks and the chance to apply CC effects with skills. For every 10 points, Hit Chance increases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_critical_attack": {
+                "name": "Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of attacks landing as Critical Hits and dealing Max Damage. For every 10 points, Critical Hit Chance increases 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_double_attack": {
+                "name": "Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increase the chance to deal double damage with Heavy Attacks. For every 10 points, chance +1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "attack_rating": {
+                "name": "Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Stat is not visible to the user.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "all_armor": {
+                "name": "Defense",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Defense <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from attacks.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "all_evasion": {
+                "name": "Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading attacks. For every 10 points, evasion chance increases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_critical_defense": {
+                "name": "Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Critical Hits and taking Min Damage from attacks. For every 10 points, chance increases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_double_defense": {
+                "name": "Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases the chance of taking double damage from Heavy Attacks. For every 10 points, Critical Hit Chance decreases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_accuracy": {
+                "name": "Boss Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of normal attacks and the chance of applying CC effects with skills against bosses. For every 10 points, Hit Chance increases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_critical_attack": {
+                "name": "Boss Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of attacks landing as Critical Hits that deal Max Damage against boss monsters. Every 10 points increases Critical Hit Chance about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_double_attack": {
+                "name": "Boss Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increase the chance to deal double damage to bosses with Heavy Attacks. For every 10 points, chance increases about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_evasion": {
+                "name": "Boss Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading attacks dealt by bosses. For every 10 points, chance increases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_critical_defense": {
+                "name": "Boss Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from attacks dealt by boss monsters. Every 10 points increases Endurance about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_all_double_defense": {
+                "name": "Boss Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases the chance of taking double damage from a boss's Heavy Attacks. For every 10 points, chance decreases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "melee_accuracy": {
+                "name": "Melee Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Melee Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of melee attacks and the chance to apply CC effects with melee skills. If your stat is higher than the target's Melee Evasion, for every 10 points of difference, Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_accuracy": {
+                "name": "PvP Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of normal attacks and the chance of applying CC effects with skills during PvP. For every 10 points, Hit Chance increases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_critical_attack": {
+                "name": "PvP Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of attacks landing as Critical Hits that deal Max Damage against opponents in PvP. Every 10 points increases Critical Hit Chance about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_double_attack": {
+                "name": "PvP Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to deal double damage by Heavy Attack during PvP. For every 10 points, chance increases about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_evasion": {
+                "name": "PvP Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading attacks during PvP. For every 10 points, chance increases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_critical_defense": {
+                "name": "PvP Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from attacks dealt by opponents in PvP. Every 10 points increases Endurance about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_all_double_defense": {
+                "name": "PvP Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Getting hit by Heavy Attack decreases the chance to take double damage in PvP. For every 10 points, chance decreases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "all_state_accuracy": {
+                "name": "CC Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "CC Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to inflict CC. For every 10 points, chance increases about 4%.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "all_state_tolerance": {
+                "name": "CC Resistances",
+                "valueFormat": "{0}",
+                "tooltipTitle": "CC Resistances <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to resist CC. For every 10 points, chance increases about 4%.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "range_accuracy": {
+                "name": "Ranged Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ranged Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of ranged attacks and the chance to apply CC effects with ranged skills. If your stat is higher than the target's Ranged Evasion, for every 10 points of difference, Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "grankus_damage_amplification": {
+                "name": "Barbarian Damage Boost",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Humanoid Damage Boost <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Humanoids. For every 10 points, damage increases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "undead_damage_amplification": {
+                "name": "Undead Damage Boost",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Undead Damage Boost <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Undead. For every 10 points, damage increases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "animal_damage_amplification": {
+                "name": "Wildling Damage Boost",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Wildkin Damage Boost <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Wildkin. For every 10 points, damage increases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "creation_damage_amplification": {
+                "name": "Construct Damage Boost",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Construct Damage Boost <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Constructs. For every 10 points, damage increases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "demon_damage_amplification": {
+                "name": "Daemonus Damage Boost",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Demon Damage Boost <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Demons. For every 10 points, damage increases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "grankus_damage_resistance": {
+                "name": "Humanoid Damage Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Humanoid Damage Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Humanoids. For every 10 points, damage taken decreases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "undead_damage_resistance": {
+                "name": "Undead Damage Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Undead Damage Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Undead. For every 10 points, damage taken decreases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "animal_damage_resistance": {
+                "name": "Wildling Damage Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Wildkin Damage Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Wildkin. For every 10 points, damage taken decreases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "creation_damage_resistance": {
+                "name": "Construct Damage Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Construct Damage Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Constructs. For every 10 points, it decreases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_accuracy": {
+                "name": "Magic Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Magic Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of magic attacks and the chance to apply CC effects with magic skills. If your stat is higher than the target's Magic Evasion, for every 10 points of difference, Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "demon_damage_resistance": {
+                "name": "Daemonus Damage Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Demon Damage Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Demons. For every 10 points, damage taken decreases by about 1%. As the number increases, the efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "adjust_fishing_exp_acquired": {
+                "name": "Fishing EXP",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Fishing EXP <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases Fishing EXP gained.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_fishing_drop_large": {
+                "name": "Large Fish Bite Chance",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Large Fish Bite Chance <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the chance that a large fish bites.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_fishing_drop_medium": {
+                "name": "Medium Fish Bite Chance",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Medium Fish Bite Chance <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the chance that a medium fish bites.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "adjust_fishing_drop_small": {
+                "name": "Small Fish Bite Chance",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Small Fish Bite Chance <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the chance that a small fish bites.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "additional_fishing_level": {
+                "name": "Fishing Bonus Level",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Fishing Bonus Level <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Displays additional Fishing levels applied.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "adjust_cooking_exp_acquired": {
+                "name": "Cooking EXP",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Cooking EXP <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases Cooking EXP gained.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "melee_evasion": {
+                "name": "Melee Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Melee Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases Melee Evasion chance. If your stat is higher than the target's Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "range_evasion": {
+                "name": "Ranged Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ranged Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases Ranged Evasion chance. If your stat is higher than the target's Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_evasion": {
+                "name": "Magic Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Magic Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases Magic Evasion chance. If your stat is higher than the target's Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "melee_critical_attack": {
+                "name": "Melee Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Melee Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of melee attacks landing as critical hits and dealing Max Damage. If your stat is higher than the target's Melee Endurance, for every 10 points of difference, Critical Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "range_critical_attack": {
+                "name": "Ranged Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ranged Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of ranged attacks landing as critical hits and dealing Max Damage. If your stat is higher than the target's Ranged Endurance, for every 10 points of difference, Critical Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_critical_attack": {
+                "name": "Magic Critical Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Magic Critical Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of magic attacks landing as critical hits and dealing Max Damage. If your stat is higher than the target's Magic Endurance, for every 10 points of difference, Critical Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "melee_critical_defense": {
+                "name": "Melee Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Melee Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from melee attacks. If your stat is higher than the target's Melee Critical Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "range_critical_defense": {
+                "name": "Ranged Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ranged Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from ranged attacks. If your stat is higher than the target's Ranged Critical, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_critical_defense": {
+                "name": "Magic Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Magic Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading critical hits and taking Min Damage from magic attacks. If your stat is higher than the target's Magic Critical Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "damage_reduction_penetration": {
+                "name": "Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "off_hand_attack_chance": {
+                "name": "Off-Hand Double Attack Chance",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Off-Hand Double Attack Chance <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The rate of attack with your off-hand weapon when dealing a normal attack or using a skill.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "damage_reduction": {
+                "name": "Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Damage Reduction <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "melee_double_attack": {
+                "name": "Melee Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Melee Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to deal double damage with Melee Heavy Attacks. If your stat is higher than the target's Melee Heavy Attack Evasion, for every 10 points of difference, increase the chance by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "range_double_attack": {
+                "name": "Ranged Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ranged Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increase the chance to deal double damage with Ranged Heavy Attacks. If your stat is higher than the target's Ranged Heavy Attack Evasion, for every 10 points of difference, increase the chance by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_double_attack": {
+                "name": "Magic Heavy Attack Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Magic Heavy Attack Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to deal double damage with Magic Heavy Attacks. If your stat is higher than the target's Magic Heavy Attack Evasion, for every 10 points of difference, increase the chance by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "melee_double_defense": {
+                "name": "Melee Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Melee Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases the chance of taking double damage from Melee Heavy Attacks. For every 10 points, chance decreases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "range_double_defense": {
+                "name": "Ranged Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Ranged Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases the chance of taking double damage from Ranged Heavy Attack. For every 10 points, chance decreases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "magic_double_defense": {
+                "name": "Magic Heavy Attack Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Magic Heavy Attack Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases the chance of taking double damage from Magic Heavy Attacks. For every 10 points, chance decreases by about 1%.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "weaken_accuracy": {
+                "name": "Weaken Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Weaken Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to Weaken a target. If your stat is higher than the target's Weaken Resistance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "stun_accuracy": {
+                "name": "Stun Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Stun Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to Stun targets. If your stat is higher than the target's Stun Resistance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "petrification_accuracy": {
+                "name": "Petrification Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Petrification Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to Petrify a target. If your stat is higher than the target's Petrification Resistance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "sleep_accuracy": {
+                "name": "Sleep Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Sleep Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to inflict Sleep. If your stat is higher than the target's Sleep Resistance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "silence_accuracy": {
+                "name": "Silence Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Silence Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to a Silence a target. If your stat is higher than the target's Silence Resistance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "blind_accuracy": {
+                "name": "Fear Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Fear Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to inflict Fear. If your stat is higher than the target's Fear Resistance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "bind_accuracy": {
+                "name": "Bind Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bind Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to Bind a target. If your stat is higher than the target's Bind Resistance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "attack_power_main_hand": {
+                "name": "Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Base Damage when attacking with your main weapon.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "collide_amplification": {
+                "name": "Collision Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Collision Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to inflict Collision Effect, and the displacement distance. If your stat is higher than the target's Collision Evasion, for every 10 points of difference, chance and distance increase about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "weaken_tolerance": {
+                "name": "Weaken Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Weaken Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to resist Weaken. If your stat is higher than the target's Weaken Chance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "stun_tolerance": {
+                "name": "Stun Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Stun Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to resist Stun. If your stat is higher than the target's Stun Chance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "petrification_tolerance": {
+                "name": "Petrification Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Petrification Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to resist Petrification. If your stat is higher than the target's Petrification Chance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "sleep_tolerance": {
+                "name": "Sleep Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Sleep Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to resist Sleep. If your stat is higher than the target's Sleep Chance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "silence_tolerance": {
+                "name": "Silence Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Silence Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to resist Silence. If your stat is higher than the target's Silence Chance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "blind_tolerance": {
+                "name": "Fear Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Fear Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to resist Fear. If your stat is higher than the target's Fear Chance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "bind_tolerance": {
+                "name": "Bind Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Bind Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to resist Bind. If your stat is higher than the target's Bind Chance, for every 10 points of difference, chance increases about 4%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "collide_resistance": {
+                "name": "Collision Resistance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Collision Resistance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance to resist Collision Effects and reduce displacement distance. If your stat is higher than the target's Collision Chance, for every 10 points of difference, chance increases about 4%, and distance is reduced by the same amount. As the difference increases, efficiency decreases.",
+                "multiplier": 0.025,
+                "invert": false
+            },
+            "attack_power_off_hand": {
+                "name": "Off-Hand Weapon Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Base Damage when attacking with your off-hand weapon.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "potion_heal_modifier": {
+                "name": "Potion Healing",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Potion Healing <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the amount of Health restored by Recovery Crystals.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "bonus_attack_power_main_hand": {
+                "name": "Base Damage ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Base Damage when attacking with your main weapon.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "attack_range_mod": {
+                "name": "Attack Range Increase",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Range ▲ <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "60",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "stamina_max": {
+                "name": "Max Stamina",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Max Stamina <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "The energy used for movement abilities. It is consumed while swimming, gliding, and doing other movements.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "stamina_regen": {
+                "name": "Stamina Regen",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Stamina Regen <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "The amount of Stamina regenerated every 10s.",
+                "multiplier": 0.001,
+                "invert": false
+            },
+            "bonus_attack_power_off_hand": {
+                "name": "Base Damage ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Base Damage when attacking with your off-hand weapon.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "grankus_bonus_attack_power": {
+                "name": "Barbarian Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Humanoid Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Humanoids.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "demon_bonus_attack_power": {
+                "name": "Demon Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Demon Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Demons.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "undead_bonus_attack_power": {
+                "name": "Undead Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Undead Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Undead.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "creation_bonus_attack_power": {
+                "name": "Construct Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Construct Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Constructs.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "animal_bonus_attack_power": {
+                "name": "Wildling Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Wildkin Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Wildkin.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "grankus_damage_reduction": {
+                "name": "Rankinus Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "<span style=\"color: #FFFF\">{0}</span> Rankinus Damage Reduction",
+                "tooltipDescription": "Decreases damage taken from Rankinus.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "demon_damage_reduction": {
+                "name": "Daemonus Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Daemonus Damage Reduction <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Daemoni.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "undead_damage_reduction": {
+                "name": "Immortus Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Immortus Damage Reduction <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Immorti.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "creation_damage_reduction": {
+                "name": "Construct Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Construct Damage Reduction <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Constructs.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "bonus_attack_power": {
+                "name": "Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "8",
+                "tooltipDescription": "8",
+                "multiplier": 1,
+                "invert": false
+            },
+            "animal_damage_reduction": {
+                "name": "Animalia Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Animalia Damage Reduction <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Animals.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "einarden_damage_reduction": {
+                "name": "Einarden Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Einarden Damage Reduction <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Einardens.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "dragon_damage_reduction": {
+                "name": "Draconus Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Draconus Damage Reduction <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Draconus.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "spirit_damage_reduction": {
+                "name": "Spiritus Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Spiritus Damage Reduction <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Spiritus.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "insect_damage_reduction": {
+                "name": "Insectum Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Insectum Damage Reduction <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Insectum.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "plant_damage_reduction": {
+                "name": "Plantaria Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Plantaria Damage Reduction <span style=\"color: #FFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from Plantarias.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "attack_speed_mod": {
+                "name": "Added Attack Speed",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Attack Speed <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The increased percentage in Attack Speed.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "off_hand_attack_chance_modifier": {
+                "name": "Off-Hand Double Attack Chance",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Off-Hand Double Attack Chance <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The increased percentage in Off-Hand Weapon Attack Chance.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "move_speed_mod": {
+                "name": "Movement Speed",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Movement Speed <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "93",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "attack_power_modifier": {
+                "name": "Weapon Damage",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "NewRow",
+                "tooltipDescription": "NewRow",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "aggro_modifier": {
+                "name": "Aggro ",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Aggro Increase/Decrease Ratio <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "100",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "stun_immune": {
+                "name": "Stun Immunity",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Stun Immunity <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The max time after being Stunned that you can't be Stunned again.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "petrification_immune": {
+                "name": "Petrification Immunity",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Petrification Immunity <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The max time after being Petrified that you can't be Petrified again.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "sleep_immune": {
+                "name": "Sleep Immunity",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Sleep Immunity <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The max time after being affected by Sleep that you can't be affected by Sleep again.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "silence_immune": {
+                "name": "Silence Immunity",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Silence Immunity <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The max time after being Silenced that you can't be Silenced again.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "bind_immune": {
+                "name": "Bind Immunity",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Bind Immunity <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The max time after being Bound that you can't be Bound again.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "blind_immune": {
+                "name": "Fear Immunity",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Fear Immunity <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The max time after being affected by Fear that you can't be affected by Fear again.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "collide_immune": {
+                "name": "Collision Immunity",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Collision Immunity <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The max time after being affected by Collision Effects that you can't be affected by Collision Effects again.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "global_skill_cooldown_modifier": {
+                "name": "Global Cooldown Speed",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Global Cooldown Speed <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Decreases cooldown of skills that are used consecutively.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "earn_weapon_mastery_exp_modifier": {
+                "name": "Mastery Bonus",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Mastery Bonus <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Weapon Mastery Bonus increases.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "shield_block_efficiency": {
+                "name": "Shield Damage Reduction",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Shield Damage Reduction <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The percent of damage your shield prevents on a successful block.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "pvp_melee_accuracy": {
+                "name": "PvP Melee Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Melee Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of melee attacks and the chance to apply CC effects with melee skills in PvP. If your stat is higher than the target's Melee Evasion, for every 10 points of difference, Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_accuracy": {
+                "name": "PvP Ranged Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Ranged Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of ranged attacks and the chance to apply CC effects with ranged skills in PvP. If your stat is higher than the target's Ranged Evasion, for every 10 points of difference, Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_accuracy": {
+                "name": "PvP Magic Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Magic Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of melee attacks and the chance to apply CC effects with melee skills against bosses. If your stat is higher than the target's Melee Evasion, for every 10 points of difference, Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_melee_evasion": {
+                "name": "PvP Melee Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Melee Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases Melee Evasion chance in PvP. If your stat is higher than the target's Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_range_evasion": {
+                "name": "PvP Ranged Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Ranged Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases Ranged Evasion chance in PvP. If your stat is higher than the target's Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "pvp_magic_evasion": {
+                "name": "PvP Magic Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Magic Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases Magic Evasion chance in PvP. If your stat is higher than the target's Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "weaken_critical_attack": {
+                "name": "PvP Critical Weaken Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Critical Weaken Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Critical Weaken and Weaken effects that last for the full Max Duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "stun_critical_attack": {
+                "name": "PvP Critical Stun Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Critical Stun Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Critical Stun and Stun effects that last for the full Max Duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "petrification_critical_attack": {
+                "name": "PvP Critical Petrification Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Critical Petrification Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Critical Petrification and Petrification effects that last for the full Max Duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "sleep_critical_attack": {
+                "name": "PvP Critical Sleep Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Critical Sleep Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Critical Sleep and Sleep effects that last for the full Max Duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "silence_critical_attack": {
+                "name": "PvP Critical Silence Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Critical Silence Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Critical Silence and Silence effects that last for the full Max Duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "blind_critical_attack": {
+                "name": "PvP Critical Fear Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Critical Fear Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Critical Fear and Fear effects that last for the full Max Duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "bind_critical_attack": {
+                "name": "PvP Critical Bind Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Critical Bind Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Critical Bind and Bind effects that last for the full Max Duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "weaken_critical_defense": {
+                "name": "PvP Weaken Endurance ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Weaken Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Critical Weaken and Weaken effects lasting for the min duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "stun_critical_defense": {
+                "name": "PvP Stun Endurance ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Stun Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Critical Stun and Stun effects lasting for the min duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "petrification_critical_defense": {
+                "name": "PvP Petrification Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Petrification Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Critical Petrification and Petrification effects lasting for the min duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "sleep_critical_defense": {
+                "name": "PvP Sleep Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Sleep Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Critical Sleep and Sleep effects lasting for the min duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "silence_critical_defense": {
+                "name": "PvP Silence Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Silence Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Critical Silence and Silence effects lasting for the min duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "blind_critical_defense": {
+                "name": "PvP Fear Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Fear Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Critical Fear and Fear effects lasting for the min duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "bind_critical_defense": {
+                "name": "PvP Bind Endurance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Bind Endurance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Critical Bind and Bind effects lasting for the min duration during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "weaken_double_attack": {
+                "name": "PvP Double Weaken",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Weaken Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Double Weaken, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "stun_double_attack": {
+                "name": "PvP Double Stun",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Stun Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Double Stun, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "petrification_double_attack": {
+                "name": "PvP Double Petrification",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Petrification Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Double Petrification, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "sleep_double_attack": {
+                "name": "PvP Double Sleep",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Sleep Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Double Sleep, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "silence_double_attack": {
+                "name": "PvP Double Silence ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Silence Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Double Silence, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "blind_double_attack": {
+                "name": "PvP Double Fear",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Fear Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Double Fear, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "bind_double_attack": {
+                "name": "PvP Double Bind",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Bind Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of applying Double Bind, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "weaken_double_defense": {
+                "name": "PvP Double Weaken Evasion ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Weaken Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Double Weaken Evasion, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "stun_double_defense": {
+                "name": "PvP Double Stun Evasion ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Double PvP Stun Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Double Stun, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "petrification_double_defense": {
+                "name": "PvP Double Petrification Evasion ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Petrification Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Double Petrification, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "sleep_double_defense": {
+                "name": "PvP Double Sleep Evasion ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Sleep Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Double Sleep, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "silence_double_defense": {
+                "name": "PvP Double Silence Evasion ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Silence Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Double Silence, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "blind_double_defense": {
+                "name": "PvP Double Fear Evasion ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Fear Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Double Fear, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "bind_double_defense": {
+                "name": "PvP Double Bind Evasion ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "PvP Double Bind Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the chance of evading Double Bind, which doubles the duration of the effect during PvP.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_bonus_attack_power": {
+                "name": "Boss Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Bonus Damage <span style=\"color: #FFFFFF\">{0}</span> ",
+                "tooltipDescription": "Increases damage dealt to bosses.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "boss_damage_reduction": {
+                "name": "Boss Damage Reduction",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Damage Reduction <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Decreases damage taken from bosses.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "boss_melee_accuracy": {
+                "name": "Boss Melee Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Melee Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of ranged attacks and the chance to apply CC effects with ranged skills against bosses. If your stat is higher than the target's Ranged Evasion, for every 10 points of difference, Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_accuracy": {
+                "name": "Boss Ranged Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Ranged Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of magic attacks and the chance to apply CC effects with magic skills in PvP. If your stat is higher than the target's Magic Evasion, for every 10 points of difference, Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_accuracy": {
+                "name": "Boss Magic Hit Chance",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Magic Hit Chance <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases the Hit Chance of magic attacks and the chance to apply CC effects with magic skills against bosses. If your stat is higher than the target's Magic Evasion, for every 10 points of difference, Hit Chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_melee_evasion": {
+                "name": "Boss Melee Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Melee Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases Melee Evasion chance against bosses. If your stat is higher than the target's Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_range_evasion": {
+                "name": "Boss Ranged Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Ranged Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases Ranged Evasion chance against bosses. If your stat is higher than the target's Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "boss_magic_evasion": {
+                "name": "Boss Magic Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Boss Magic Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases Magic Evasion chance against bosses. If your stat is higher than the target's Hit Chance, for every 10 points of difference, chance increases by about 1%. As the difference increases, efficiency decreases.",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "gathering_speed": {
+                "name": "Gathering Speed",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Gathering Speed",
+                "tooltipDescription": "The speed items are gathered.",
+                "multiplier": 0.001,
+                "invert": false
+            },
+            "gathering_double_chance": {
+                "name": "Double Gathering",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Double Gathering",
+                "tooltipDescription": "Get more items when gathering.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "gathering_critical_chance": {
+                "name": "Special Item Chance",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Special Item Chance",
+                "tooltipDescription": "The chance to get special items when gathering.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "polymorph_duration": {
+                "name": "Summon Duration ▲",
+                "valueFormat": "{0}s",
+                "tooltipTitle": "187",
+                "tooltipDescription": "187",
+                "multiplier": 0.001,
+                "invert": false
+            },
+            "evasion": {
+                "name": "All Evasion",
+                "valueFormat": "{0}",
+                "tooltipTitle": "All Evasion <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "189",
+                "multiplier": 0.1,
+                "invert": false
+            },
+            "dash_fast_move_speed_modifier": {
+                "name": "Dash Morph Accel. Bonus",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Dash Morph Accel. Bonus <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases bonus to Acceleration Rate while in Dash Morph.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "dash_normal_move_speed_modifier": {
+                "name": "Dash Morph Speed Bonus",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Dash Morph Speed Bonus <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases bonus to Movement Speed while in Dash Morph.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "swim_fast_move_speed_modifier": {
+                "name": "Aqua. Morph Accel. Bonus",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Aqua. Morph Accel. Bonus <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases bonus to Acceleration Rate while in Aquatic Morph.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "swim_normal_move_speed_modifier": {
+                "name": "Aqua. Morph Speed Bonus",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Aqua. Morph Speed Bonus <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases bonus to Movement Speed while in Aquatic Morph.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "glide_fast_move_speed_modifier": {
+                "name": "Glide Morph Accel. Bonus",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Glide Morph Accel. Bonus <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases bonus to Acceleration Rate while in Glide Morph.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "glide_normal_move_speed_modifier": {
+                "name": "Glide Morph Speed Bonus",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Glide Morph Speed Bonus <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases bonus to Movement Speed while in Glide Morph.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "stamina_consumption_modifier": {
+                "name": "Stamina Cost Efficiency ▲ ",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Morph Stamina Cost Efficiency ▲",
+                "tooltipDescription": "Increases Stamina Cost Efficiency while dashing, swimming, and gliding.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "shield_block_chance_penetration": {
+                "name": "Shield Block Penetration Chance",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Shield Block Penetration Chance <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Decreases the chance to block an attack with the shield.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "critical_damage_dealt_modifier": {
+                "name": "Critical Damage",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Critical Damage <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the damage upon landing Critical Hits.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "critical_damage_taken_modifier": {
+                "name": "Critical Damage Reduction",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Critical Damage Reduction <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Decreases the damage received from a Critical Hit.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "pvp_damage_dealt_modifier": {
+                "name": "PvP Damage ▲",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "PvP Damage Increases <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases PvP damage dealt.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "pvp_damage_taken_modifier": {
+                "name": "PvP Damage Taken",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "PvP Damage Taken <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Decreases PvP damage taken.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "attack_range_modifier": {
+                "name": "Attack Range Increase",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Range ▲ <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "60",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "bonus_grankus_attack_power": {
+                "name": "Barbarian Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Humanoid Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Humanoids.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "bonus_demon_attack_power": {
+                "name": "Demon Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Demon Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Demons.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "bonus_undead_attack_power": {
+                "name": "Undead Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Undead Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Undead.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "bonus_creation_attack_power": {
+                "name": "Construct Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Construct Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Constructs.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "bonus_animal_attack_power": {
+                "name": "Wildling Bonus Damage",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Wildkin Bonus Damage <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Increases damage dealt to Wildkin.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "move_speed": {
+                "name": "Movement Speed ",
+                "valueFormat": "{0}",
+                "tooltipTitle": "Movement Speed <span style=\"color: #FFFFFF\">{0}</span>",
+                "tooltipDescription": "Basic move speed. Also impacts jump distance.",
+                "multiplier": 1,
+                "invert": false
+            },
+            "attack_speed_modifier": {
+                "name": "Added Attack Speed",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Attack Speed <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "The increased percentage in Attack Speed.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "aura_effect_boost": {
+                "name": "Aura Effect",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Aura Effects <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases Aura effects.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "aura_radius_modifier": {
+                "name": "Aura Range",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Aura Range Increase <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the area of effect of Aura effects.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "heal_taken_modifier": {
+                "name": "Recovery Effect",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Recovery Effect <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases amount recovered when restoring Health.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "heal_modifier": {
+                "name": "Skill Heal",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Skill Heal <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases the amount healed by skills.",
+                "multiplier": 0.01,
+                "invert": false
+            },
+            "skill_heal_taken_modifier": {
+                "name": "Healing Received",
+                "valueFormat": "{0}%",
+                "tooltipTitle": "Healing Received <span style=\"color: #FFFFFF\">{0}%</span>",
+                "tooltipDescription": "Increases amount healed by skills used on the user.",
+                "multiplier": 0.01,
+                "invert": false
+            }
+        }
+    }
+}
