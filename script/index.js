@@ -110,21 +110,25 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
       const inStockNaeE = traitItemNaeE ? traitItemNaeE.inStock : '0';
 
       htmlContent += `
-        <div class="row align-items-center mb-3 justify-content-around">
-          <div class="col-4 col-md-3">
-            <strong>${traitName}</strong>
-          </div>
-          <div class="col-4 col-md-3">
-            <span class="fw-light" style="padding: 2px 10px; font-size: 0.75rem;; border: 1px solid #ccc; border-radius: 100px">${selectedRegions[0] ? selectedRegions[0].toUpperCase() : 'Null'}</span>
-            <span>${minPriceSaF}</span>
-            <img class="luc ms-1" src="https://cdn.questlog.gg/throne-and-liberty/common/lucent.webp" alt="luc" width="14">
-            <span>(${inStockSaF})</span>
-          </div>
-          <div class="col-4 col-md-3">
-            <span class="fw-light" style="padding: 2px 10px; font-size: 0.75rem;; border: 1px solid #ccc; border-radius: 100px" style="border: 1px solid #000">${selectedRegions[1] ? selectedRegions[1].toUpperCase() : 'Null'}</span>
-            <span>${minPriceNaeE}</span>
-            <img class="luc ms-1" src="https://cdn.questlog.gg/throne-and-liberty/common/lucent.webp" alt="luc" width="14">
-            <span>(${inStockNaeE})</span>
+        <div class="row align-items-center mb-3 justify-content-around d-flex flex-row">
+          <strong>${traitName}</strong>
+          <div class="row w-100 justify-content-between">
+            <div class="d-flex flex-row justify-content-between align-items-center mt-2 mr-1 p-2 price-region" style="width: 48%; border-radius: 20px">
+              <span class="fw-light" style="padding: 2px 10px; font-size: 0.75rem;; border: 1px solid #ccc; border-radius: 100px">${selectedRegions[0] ? selectedRegions[0].toUpperCase() : 'Null'}</span>
+              <div class="text-end">
+                <span>${minPriceSaF}</span>
+                <img class="luc ms-1" src="https://cdn.questlog.gg/throne-and-liberty/common/lucent.webp" alt="luc" width="14">
+                <span>(${inStockSaF})</span>
+              </div>
+            </div>
+            <div class="d-flex flex-row justify-content-between align-items-center mt-2 ml-1 p-2 price-region" style="width: 48%; border-radius: 20px">
+              <span class="fw-light" style="padding: 2px 10px; font-size: 0.75rem;; border: 1px solid #ccc; border-radius: 100px" style="border: 1px solid #000">${selectedRegions[1] ? selectedRegions[1].toUpperCase() : 'Null'}</span>
+              <div class="text-end">
+                <span>${minPriceNaeE}</span>
+                <img class="luc ms-1" src="https://cdn.questlog.gg/throne-and-liberty/common/lucent.webp" alt="luc" width="14">
+                <span>(${inStockNaeE})</span>
+              </div>
+            </div>
           </div>
         </div>
       `;
