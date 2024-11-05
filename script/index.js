@@ -69,7 +69,7 @@ function generatePaginationButtons(totalItems) {
   const totalPages = Math.ceil(totalItems / itemsPerPage);
   let paginationHtml = '<nav><ul class="pagination justify-content-center flex-wrap">';
 
-  const maxPagesToShow = 5;
+  const maxPagesToShow = 3;
   const sidePages = Math.floor(maxPagesToShow / 2);
 
   if (totalPages <= maxPagesToShow) {
@@ -186,7 +186,7 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
           <strong>${traitName}</strong>
           <div class="row w-100 justify-content-between">
             <div class="d-flex flex-row justify-content-between align-items-center mt-2 mr-1 p-2 price-region" style="width: 48%; border-radius: 20px">
-              <span class="fw-light" style="padding: 2px 10px; font-size: 0.75rem;; border: 1px solid #ccc; border-radius: 100px">${selectedRegions[0] ? selectedRegions[0].toUpperCase() : 'Null'}</span>
+              <span class="fw-light" style="padding: 2px 5px; font-size: 0.75rem;; border: 1px solid #ccc; border-radius: 100px">${selectedRegions[0] ? selectedRegions[0].toUpperCase() : 'Null'}</span>
               <div class="text-end">
                 <span>${minPriceSaF}</span>
                 <img class="luc ms-1" src="https://cdn.questlog.gg/throne-and-liberty/common/lucent.webp" alt="luc" width="14">
@@ -194,7 +194,7 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
               </div>
             </div>
             <div class="d-flex flex-row justify-content-between align-items-center mt-2 ml-1 p-2 price-region" style="width: 48%; border-radius: 20px">
-              <span class="fw-light" style="padding: 2px 10px; font-size: 0.75rem;; border: 1px solid #ccc; border-radius: 100px" style="border: 1px solid #000">${selectedRegions[1] ? selectedRegions[1].toUpperCase() : 'Null'}</span>
+              <span class="fw-light" style="padding: 2px 5px; font-size: 0.75rem;; border: 1px solid #ccc; border-radius: 100px" style="border: 1px solid #000">${selectedRegions[1] ? selectedRegions[1].toUpperCase() : 'Null'}</span>
               <div class="text-end">
                 <span>${minPriceNaeE}</span>
                 <img class="luc ms-1" src="https://cdn.questlog.gg/throne-and-liberty/common/lucent.webp" alt="luc" width="14">
