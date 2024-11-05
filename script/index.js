@@ -1,47 +1,49 @@
 let traitMapping = {}
+let currentPage = 1
+const itemsPerPage = 25
 
 async function loadTraitMapping(language) {
   const path = `./traits/${language}Status.json`
   
   try {
-    const response = await fetch(path);
+    const response = await fetch(path)
     if (!response.ok) {
-      throw new Error(`Erro ao carregar ${language}Status.json`);
+      throw new Error(`Erro ao carregar ${language}Status.json`)
     }
-    const data = await response.json();
-    traitMapping = data.result.data;
+    const data = await response.json()
+    traitMapping = data.result.data
   } catch (error) {
-    console.error('Erro ao carregar mapeamento de status:', error);
+    console.error('Erro ao carregar mapeamento de status:', error)
   }
 }
 
 function getBackgroundColor(grade) {
   switch (grade) {
-    case 1: return '#B7B7B7';
-    case 2: return '#52BE72';
-    case 3: return '#61A9F1';
-    case 4: return '#A979CB';
-    default: return '#FFFFFF';
+    case 1: return '#B7B7B7'
+    case 2: return '#52BE72'
+    case 3: return '#61A9F1'
+    case 4: return '#A979CB'
+    default: return '#FFFFFF'
   }
 }
 
 async function main(categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, selectedRegions) {
-  const [region1, region2] = selectedRegions;
+  const [region1, region2] = selectedRegions
 
-  const region1Data = await fetchAuctionHouseData(region1);
-  const region2Data = await fetchAuctionHouseData(region2);
+  const region1Data = await fetchAuctionHouseData(region1)
+  const region2Data = await fetchAuctionHouseData(region2)
 
-  const region1Map = Object.fromEntries(region1Data.map(item => [item.id, item]));
-  const region2Map = Object.fromEntries(region2Data.map(item => [item.id, item]));
+  const region1Map = Object.fromEntries(region1Data.map(item => [item.id, item]))
+  const region2Map = Object.fromEntries(region2Data.map(item => [item.id, item]))
 
-  generate(region1Map, region2Map, categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, [region1, region2]);
+  generate(region1Map, region2Map, categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, [region1, region2])
 }
 
 async function fetchAuctionHouseData(region) {
   const language = document.getElementById('language').value
-  await loadTraitMapping(language);
-  const apiUrl = `https://questlog.gg/throne-and-liberty/api/trpc/actionHouse.getAuctionHouse?input=${encodeURIComponent(`{"language":"${language}","regionId":"${region}"}`)}`;
-  const proxyUrl = `https://frosty-breeze-a53c.danielgomesmoura.workers.dev?url=${encodeURIComponent(apiUrl)}`;
+  await loadTraitMapping(language)
+  const apiUrl = `https://questlog.gg/throne-and-liberty/api/trpc/actionHouse.getAuctionHouse?input=${encodeURIComponent(`{"language":"${language}","regionId":"${region}"}`)}`
+  const proxyUrl = `https://frosty-breeze-a53c.danielgomesmoura.workers.dev?url=${encodeURIComponent(apiUrl)}`
 
   try {
     const response = await fetch(proxyUrl, {
@@ -63,24 +65,94 @@ async function fetchAuctionHouseData(region) {
   }
 }
 
+function generatePaginationButtons(totalItems) {
+  const totalPages = Math.ceil(totalItems / itemsPerPage);
+  let paginationHtml = '<nav><ul class="pagination justify-content-center flex-wrap">';
+
+  const maxPagesToShow = 5;
+  const sidePages = Math.floor(maxPagesToShow / 2);
+
+  if (totalPages <= maxPagesToShow) {
+    for (let i = 1; i <= totalPages; i++) {
+      paginationHtml += `
+        <li class="page-item ms-2 ${i === currentPage ? 'active' : ''}">
+          <button class="page-link" onclick="changePage(${i})">${i}</button>
+        </li>
+      `;
+    }
+  } else {
+    paginationHtml += `
+      <li class="page-item ms-2 ${currentPage === 1 ? 'active' : ''}">
+        <button class="page-link" onclick="changePage(1)">1</button>
+      </li>
+    `;
+
+    if (currentPage > sidePages + 2) {
+      paginationHtml += `
+        <li class="page-item ms-2 disabled">
+          <span class="page-link">...</span>
+        </li>
+      `;
+    }
+
+    let startPage = Math.max(2, currentPage - sidePages);
+    let endPage = Math.min(totalPages - 1, currentPage + sidePages);
+
+    for (let i = startPage; i <= endPage; i++) {
+      paginationHtml += `
+        <li class="page-item ms-2 ${i === currentPage ? 'active' : ''}">
+          <button class="page-link" onclick="changePage(${i})">${i}</button>
+        </li>
+      `;
+    }
+
+    if (currentPage < totalPages - sidePages - 1) {
+      paginationHtml += `
+        <li class="page-item ms-2 disabled">
+          <span class="page-link">...</span>
+        </li>
+      `;
+    }
+
+    paginationHtml += `
+      <li class="page-item ms-2 ${currentPage === totalPages ? 'disabled' : ''}">
+        <button class="page-link" onclick="changePage(${totalPages})">${totalPages}</button>
+      </li>
+    `;
+  }
+
+  paginationHtml += '</ul></nav>'
+  document.getElementsByClassName('pagination-elipse')[0].innerHTML = paginationHtml
+  document.getElementsByClassName('pagination-elipse')[1].innerHTML = paginationHtml
+}
+
+function changePage(pageNumber) {
+  currentPage = pageNumber
+  executeFilter()
+}
+
 function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', selectedRegions) {
-  let htmlContent = '';
+  let htmlContent = ''
 
   const filteredKeys = Object.keys(saFMap).filter(id => {
-    const item = saFMap[id];
-    const isCategoryMatch = !categoryFilter || item.mainCategory === categoryFilter;
-    const isSubCategoryMatch = !subcategoryFilter || item.subCategory === subcategoryFilter || item.subSubCategory === subcategoryFilter;
-    const isSearchMatch = !searchQuery || item.name.toLowerCase().includes(searchQuery.toLowerCase());
-    const isBossMatch = !bossFilter || (bossDrops[bossFilter] && bossDrops[bossFilter].includes(id));
-    const isWorldBossMatch = !worldbossFilter || (worldbossDrops[worldbossFilter] && worldbossDrops[worldbossFilter].includes(id));
-    return isCategoryMatch && isSubCategoryMatch && isSearchMatch && isBossMatch && isWorldBossMatch;
-  });
+    const item = saFMap[id]
+    const isCategoryMatch = !categoryFilter || item.mainCategory === categoryFilter
+    const isSubCategoryMatch = !subcategoryFilter || item.subCategory === subcategoryFilter || item.subSubCategory === subcategoryFilter
+    const isSearchMatch = !searchQuery || item.name.toLowerCase().includes(searchQuery.toLowerCase())
+    const isBossMatch = !bossFilter || (bossDrops[bossFilter] && bossDrops[bossFilter].includes(id))
+    const isWorldBossMatch = !worldbossFilter || (worldbossDrops[worldbossFilter] && worldbossDrops[worldbossFilter].includes(id))
+    return isCategoryMatch && isSubCategoryMatch && isSearchMatch && isBossMatch && isWorldBossMatch
+  })
 
-  filteredKeys.forEach(id => {
-    const itemSaF = saFMap[id];
-    const itemNaeE = naeEMap[id];
-    const itemImg = itemSaF.icon.replace(/\.[^.]*$/, '');
-    const backgroundColor = getBackgroundColor(itemSaF.grade);
+  const startIndex = (currentPage - 1) * itemsPerPage
+  const endIndex = startIndex + itemsPerPage
+  const itemsToDisplay = filteredKeys.slice(startIndex, endIndex)
+
+  itemsToDisplay.forEach(id => {
+    const itemSaF = saFMap[id]
+    const itemNaeE = naeEMap[id]
+    const itemImg = itemSaF.icon.replace(/\.[^.]*$/, '')
+    const backgroundColor = getBackgroundColor(itemSaF.grade)
 
     htmlContent += `
       <div class="card mb-3 shadow-sm">
@@ -89,25 +161,25 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
             <div class="card-header text-white d-flex align-items-center p-0" style="background-color: ${backgroundColor};">
               <img src="https://cdn.questlog.gg/throne-and-liberty${itemImg}.webp" class="img-fluid rounded" alt="${itemSaF.name}" style="max-height: 100px;">
               <div>
-                <h2 class="h6 mb-0">${itemSaF.name}</h2>
-                <h2 class="h6 mb-0">${itemSaF.id}</h2>
+                <h2 class="h6 mb-0" style="word-break: break-all; font-size: 14px;">${itemSaF.name}</h2>
+                <h2 class="h6 mb-0" style="word-break: break-all; font-size: 14px;">${itemSaF.id}</h2>
               </div>
             </div>
             <div class="card-body">
     `;
 
     for (const traitId in itemSaF.traitIds) {
-      const traitKey = itemSaF.traitIds[traitId];
-      const traitInfo = traitMapping[traitKey] || { name: 'Desconhecido' };
-      const traitName = traitInfo.name;
+      const traitKey = itemSaF.traitIds[traitId]
+      const traitInfo = traitMapping[traitKey] || { name: 'Desconhecido' }
+      const traitName = traitInfo.name
 
-      const traitItemSaF = itemSaF.traitItems.find(item => item.traitId === parseInt(traitId));
-      const minPriceSaF = traitItemSaF ? traitItemSaF.minPrice : '-';
-      const inStockSaF = traitItemSaF ? traitItemSaF.inStock : '0';
+      const traitItemSaF = itemSaF.traitItems.find(item => item.traitId === parseInt(traitId))
+      const minPriceSaF = traitItemSaF ? traitItemSaF.minPrice : '-'
+      const inStockSaF = traitItemSaF ? traitItemSaF.inStock : '0'
 
-      const traitItemNaeE = itemNaeE ? itemNaeE.traitItems.find(item => item.traitId === parseInt(traitId)) : null;
-      const minPriceNaeE = traitItemNaeE ? traitItemNaeE.minPrice : '-';
-      const inStockNaeE = traitItemNaeE ? traitItemNaeE.inStock : '0';
+      const traitItemNaeE = itemNaeE ? itemNaeE.traitItems.find(item => item.traitId === parseInt(traitId)) : null
+      const minPriceNaeE = traitItemNaeE ? traitItemNaeE.minPrice : '-'
+      const inStockNaeE = traitItemNaeE ? traitItemNaeE.inStock : '0'
 
       htmlContent += `
         <div class="row align-items-center mb-3 justify-content-around d-flex flex-row">
@@ -140,9 +212,10 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
         </div>
       </div>
     `;
-  });
+  })
 
-  document.getElementById('main').innerHTML = htmlContent;
+  document.getElementById('main').innerHTML = htmlContent
+  generatePaginationButtons(filteredKeys.length)
 }
 
 main(categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', ["nae-e", "sa-f"])

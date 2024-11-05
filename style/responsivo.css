@@ -11,6 +11,10 @@
     gap: 0.5rem !important;
 }
 
+.page-item > * {
+    border-radius: 5px !important;
+}
+
 @media (max-width: 768px) {
     .card.w-75 {
         width: 100% !important;

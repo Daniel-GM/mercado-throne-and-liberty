@@ -15,29 +15,29 @@ document.getElementById('checkbox-region').addEventListener('change', async (eve
 })
 
 document.getElementById('clean-filter').addEventListener('click', async () => {
-    main(categoryFilter = '', searchQuery = '', bossFilter = '', ["nae-e", "sa-f"])
     cleanInputs()
+    executeFilter()
 })
 
 document.getElementById('filter').addEventListener('click', async () => {
     executeFilter()
 })
 
-document.getElementById('categoryFilter').addEventListener('change', async () => {
-    executeFilter()
-})
+// document.getElementById('categoryFilter').addEventListener('change', async () => {
+//     executeFilter()
+// })
 
-document.getElementById('subcategoryFilter').addEventListener('change', async () => {
-    executeFilter()
-})
+// document.getElementById('subcategoryFilter').addEventListener('change', async () => {
+//     executeFilter()
+// })
 
-document.getElementById('bossFilter').addEventListener('change', async () => {
-    executeFilter()
-})
+// document.getElementById('bossFilter').addEventListener('change', async () => {
+//     executeFilter()
+// })
 
-document.getElementById('worldbossFilter').addEventListener('change', async () => {
-    executeFilter()
-})
+// document.getElementById('worldbossFilter').addEventListener('change', async () => {
+//     executeFilter()
+// })
 
 async function executeFilter() {
     const selectedCheckboxes = Array.from(document.querySelectorAll('#checkbox-region input[type="checkbox"]:checked'))
@@ -53,5 +53,9 @@ async function executeFilter() {
 }
 
 function cleanInputs() {
-    
+    document.getElementById('categoryFilter').value = ''
+    document.getElementById('subcategoryFilter').value = ''
+    document.getElementById('searchInput').value = ''
+    document.getElementById('bossFilter').value = ''
+    document.getElementById('worldbossFilter').value = ''
 }
