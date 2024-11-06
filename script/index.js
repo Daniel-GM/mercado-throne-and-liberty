@@ -1,6 +1,7 @@
 let traitMapping = {}
 let currentPage = 1
 const itemsPerPage = 25
+let favorites = JSON.parse(localStorage.getItem('favorites')) || []
 
 async function loadTraitMapping(language) {
   const path = `./traits/${language}Status.json`
@@ -27,7 +28,35 @@ function getBackgroundColor(grade) {
   }
 }
 
-async function main(categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, selectedRegions) {
+function toggleFavorite(itemId) {
+  let favorites = JSON.parse(localStorage.getItem('favorites')) || []
+  
+  if (favorites.includes(itemId)) {
+    favorites = favorites.filter(fav => fav !== itemId)
+  } else {
+    favorites.push(itemId)
+  }
+  
+  localStorage.setItem('favorites', JSON.stringify(favorites))  
+  updateFavoriteButton(itemId)
+}
+
+function updateFavoriteButton(itemId) {
+  const button = document.querySelector(`.favorite-button[data-id="${itemId}"]`)
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || []
+  
+  if (button) {
+    if (favorites.includes(itemId)) {
+      button.classList.add('favorited')
+      button.innerHTML = '★'
+    } else {
+      button.classList.remove('favorited')
+      button.innerHTML = '☆'
+    }
+  }
+}
+
+async function main(categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, selectedRegions, onlyFavorites) {
   const [region1, region2] = selectedRegions
 
   const region1Data = await fetchAuctionHouseData(region1)
@@ -36,7 +65,7 @@ async function main(categoryFilter, subcategoryFilter, searchQuery, bossFilter, 
   const region1Map = Object.fromEntries(region1Data.map(item => [item.id, item]))
   const region2Map = Object.fromEntries(region2Data.map(item => [item.id, item]))
 
-  generate(region1Map, region2Map, categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, [region1, region2])
+  generate(region1Map, region2Map, categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, [region1, region2], onlyFavorites)
 }
 
 async function fetchAuctionHouseData(region) {
@@ -131,8 +160,9 @@ function changePage(pageNumber) {
   executeFilter()
 }
 
-function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', selectedRegions) {
+function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', selectedRegions, onlyFavorites) {
   let htmlContent = ''
+  const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
 
   const filteredKeys = Object.keys(saFMap).filter(id => {
     const item = saFMap[id]
@@ -141,7 +171,9 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
     const isSearchMatch = !searchQuery || item.name.toLowerCase().includes(searchQuery.toLowerCase())
     const isBossMatch = !bossFilter || (bossDrops[bossFilter] && bossDrops[bossFilter].includes(id))
     const isWorldBossMatch = !worldbossFilter || (worldbossDrops[worldbossFilter] && worldbossDrops[worldbossFilter].includes(id))
-    return isCategoryMatch && isSubCategoryMatch && isSearchMatch && isBossMatch && isWorldBossMatch
+    const isFavoriteMatch = !onlyFavorites || favorites.includes(id);
+
+    return isCategoryMatch && isSubCategoryMatch && isSearchMatch && isBossMatch && isWorldBossMatch && isFavoriteMatch
   })
 
   const startIndex = (currentPage - 1) * itemsPerPage
@@ -153,6 +185,8 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
     const itemNaeE = naeEMap[id]
     const itemImg = itemSaF.icon.replace(/\.[^.]*$/, '')
     const backgroundColor = getBackgroundColor(itemSaF.grade)
+    const isFavorite = favorites.includes(id);
+
     // <h2 class="h6 mb-0" style="word-break: break-all; font-size: 14px;">${itemSaF.id}</h2>
     htmlContent += `
       <div class="card mb-3 shadow-sm">
@@ -162,8 +196,10 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
               <img src="https://cdn.questlog.gg/throne-and-liberty${itemImg}.webp" class="img-fluid rounded" alt="${itemSaF.name}" style="max-height: 100px;">
               <div>
                 <h2 class="h6 mb-0" style="word-break: break-all; font-size: 14px;">${itemSaF.name}</h2>
-                
-              </div>
+                </div>
+                <button class="favorite-button" data-id="${id}" onclick="toggleFavorite('${id}')" style="background-color: #00000000; border: none;">
+                  ${isFavorite ? '★' : '☆'}
+                </button>
             </div>
             <div class="card-body">
     `;
@@ -218,4 +254,4 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
   generatePaginationButtons(filteredKeys.length)
 }
 
-main(categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', ["nae-e", "sa-f"])
+main(categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', ["nae-e", "sa-f"], false)

@@ -48,8 +48,10 @@ async function executeFilter() {
     const bossFilter = document.getElementById('bossFilter').value
     const worldbossFilter = document.getElementById('worldbossFilter').value
     const selectedRegions = selectedCheckboxes.map(checkbox => checkbox.id)
+    const favoriteFilter = document.getElementById('favorite-filter').value;
+    const onlyFavorites = favoriteFilter === 'favoritos';
 
-    await main(categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, selectedRegions)
+    await main(categoryFilter, subcategoryFilter, searchQuery, bossFilter, worldbossFilter, selectedRegions, onlyFavorites)
 }
 
 function cleanInputs() {
