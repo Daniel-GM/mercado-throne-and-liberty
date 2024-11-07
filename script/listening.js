@@ -60,4 +60,5 @@ function cleanInputs() {
     document.getElementById('searchInput').value = ''
     document.getElementById('bossFilter').value = ''
     document.getElementById('worldbossFilter').value = ''
+    document.getElementById('favorite-filter').value = ''
 }
