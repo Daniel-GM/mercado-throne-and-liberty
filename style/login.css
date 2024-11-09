@@ -1,0 +1,13 @@
+.none {
+    display: none;
+}
+
+#signInButton img {
+    width: 24px;
+    height: 24px;
+}
+
+#signInButton {
+    border: solid 1px;
+    border-radius: 5px;
+}
