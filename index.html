@@ -11,29 +11,13 @@
 
         gtag('config', 'G-92HZZ0PM40');
     </script>
-    <!-- <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-            apiKey: "AIzaSyBCQB64KUUTEOWo6e5vp36wPkHj-_P0e64",
-            authDomain: "auction-house-62e47.firebaseapp.com",
-            projectId: "auction-house-62e47",
-            storageBucket: "auction-house-62e47.firebasestorage.app",
-            messagingSenderId: "100173734102",
-            appId: "1:100173734102:web:aefe2cba45f11b8dd9a977",
-            measurementId: "G-PGKNH6Q393"
-        };
-
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
-    </script> -->
+    <!-- Firebase -->
+    <script src="./script/firebase/firebaseConfig.js" type="module"></script>
+    <script src="./script/firebase/firebaseApp.js" type="module"></script>
+    <script src="./script/firebase/firebaseAuth.js" type="module"></script>
+    <script src="./script/firebase/firebaseDatabase.js" type="module"></script>
+    <script src="./script/firebase/firebaseGlobalDatabase.js" type="module"></script>
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/darkmode.css">
@@ -221,20 +205,10 @@
     <div id="main" class="w-75 m-auto"></div>
     <div class="pagination-elipse"></div>
 
-
     <script src="./script/index.js"></script>
     <script src="./script/listening.js"></script>
     <script src="./script/itemBoss.js"></script>
     <script src="./script/darkmode.js"></script>
-
-    <!-- Firebase -->
-    <script src="./script/firebase/firebaseConfig.js" type="module"></script>
-    <script src="./script/firebase/firebaseApp.js" type="module"></script>
-    <script src="./script/firebase/firebaseAuth.js" type="module"></script>
-    <script src="./script/firebase/firebaseDatabase.js" type="module"></script>
-    <script src="./script/firebase/firebaseExecDatabase.js" type="module"></script>
-
-    
 </body>
 
 </html>

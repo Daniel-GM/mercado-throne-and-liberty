@@ -50,17 +50,19 @@ export async function removeItemFromArray(collectionName, documentId, itemToRemo
     }
 }
 
-export async function readDocuments(collectionName) {
+export async function getDocumentData(collectionName, documentId) {
     try {
-        const querySnapshot = await getDocs(collection(db, collectionName));
-        const documents = [];
-        querySnapshot.forEach((doc) => {
-            documents.push({ id: doc.id, ...doc.data() });
-        });
-        return documents;
+        const docRef = doc(db, collectionName, documentId);
+        const docSnap = await getDoc(docRef);
+        
+        if (docSnap.exists()) {
+            return docSnap.data().itens;
+        } else {
+            console.log("Documento não encontrado.");
+            return null;
+        }
     } catch (error) {
-        console.error("Erro ao ler documentos:", error);
+        console.error("Erro ao ler o documento:", error);
     }
 }
 
-await addItemFromArray("favoritos", userUid, "legs_leather_aa_t1_nomal_001_TraitExtract");

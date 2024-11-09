@@ -28,22 +28,25 @@ function getBackgroundColor(grade) {
   }
 }
 
-function toggleFavorite(itemId) {
-  let favorites = JSON.parse(localStorage.getItem('favorites')) || []
-
+async function toggleFavorite(itemId) {
+  let favorites = await getDocumentData("favoritos","CdNAZ9jZ1YhBAAv0uBd1IkuQyav2")
+  
   if (favorites.includes(itemId)) {
-    favorites = favorites.filter(fav => fav !== itemId)
+    // favorites = favorites.filter(fav => fav !== itemId)
+    removeItemFromArray("favoritos", "CdNAZ9jZ1YhBAAv0uBd1IkuQyav2", itemId)
   } else {
-    favorites.push(itemId)
+    addItemFromArray("favoritos", "CdNAZ9jZ1YhBAAv0uBd1IkuQyav2", itemId)
+    // favorites.push(itemId)
   }
 
-  localStorage.setItem('favorites', JSON.stringify(favorites))
-  updateFavoriteButton(itemId)
+  await updateFavoriteButton(itemId)
 }
 
-function updateFavoriteButton(itemId) {
+async function updateFavoriteButton(itemId) {
   const button = document.querySelector(`.favorite-button[data-id="${itemId}"]`)
-  const favorites = JSON.parse(localStorage.getItem('favorites')) || []
+  let favorites = await getDocumentData("favoritos","CdNAZ9jZ1YhBAAv0uBd1IkuQyav2")
+
+  console.log(favorites)
 
   if (button) {
     if (favorites.includes(itemId)) {
