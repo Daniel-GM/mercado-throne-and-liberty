@@ -4,58 +4,64 @@ import { createDocumentIfNotExists } from "./firebaseDatabase.js";
 const auth = getAuth();
 const provider = new GoogleAuthProvider();
 
-const signInButton = document.getElementById("signInButton");
-const signOutButton = document.getElementById("signOutButton");
-
-signOutButton.style.display = 'none';
+const googleAuthButton = document.getElementById("googleAuthButton");
+const imgGoogle = document.getElementById("img-google");
+const spanGoogle = document.getElementById("span-google");
 
 let currentUserUid = null;
 
+// Sign-in function
 const userSignIn = async () => {
-    signInWithPopup(auth, provider)
-        .then((result) => {
-            const user = result.user;
-            currentUserUid = user.uid;
-            console.log(user);
+    try {
+        const result = await signInWithPopup(auth, provider);
+        const user = result.user;
+        currentUserUid = user.uid;
 
-            createDocumentIfNotExists("favoritos", { itens: [] }, currentUserUid);
-        })
-        .catch((error) => {
-            const errorCode = error.code;
-            const errorMessage = error.message;
-
-            console.log(errorCode + ": " + errorMessage);
-        });
+        createDocumentIfNotExists("favoritos", { itens: [] }, currentUserUid);
+        console.log("Usuário logado:", user);
+    } catch (error) {
+        console.error("Erro ao logar:", error.message);
+    }
 };
 
+// Sign-out function
 const userSignOut = async () => {
-    signOut(auth)
-        .then(() => {
-            alert("Seu usuario foi deslogado com sucesso!");
-            currentUserUid = null;
-        }).catch((error) => {
-            console.log(error);
-        });
+    try {
+        await signOut(auth);
+        alert("Você foi desconectado com sucesso!");
+        currentUserUid = null;
+    } catch (error) {
+        console.error("Erro ao deslogar:", error.message);
+    }
+};
+
+const updateUI = (user) => {
+    if (user) {
+        imgGoogle.src = user.photoURL || "./img/google.png";
+        spanGoogle.textContent = `Sair (${user.displayName || "Usuário"})`;
+        googleAuthButton.onclick = userSignOut;
+        main(categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', ["nae-e", "sa-f"], false)
+
+    } else {
+        imgGoogle.src = "./img/google.png";
+        spanGoogle.textContent = "Login com Google";
+        googleAuthButton.onclick = userSignIn;
+        main(categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', ["nae-e", "sa-f"], false)
+
+    }
 };
 
 onAuthStateChanged(auth, (user) => {
     if (user) {
-        console.log(user);
         currentUserUid = user.uid;
-        signInButton.style.display = 'none';
-        signOutButton.style.display = 'block';
-
+        console.log("Usuário autenticado:", user);
         createDocumentIfNotExists("favoritos", { itens: [] }, currentUserUid);
     } else {
         currentUserUid = null;
-        signInButton.style.display = 'block';
-        signOutButton.style.display = 'none';
     }
+    updateUI(user);
 });
 
-signInButton.addEventListener('click', userSignIn);
-signOutButton.addEventListener('click', userSignOut);
-
-export function getCurrentUserUid() {
+export async function getCurrentUserUid() {
     return currentUserUid;
 }

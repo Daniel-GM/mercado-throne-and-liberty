@@ -34,9 +34,9 @@
 </head>
 
 <body class="dark-mode">
-    <button id="signInButton" class="">Entrar com google</button>
+    <!-- <button id="signInButton" class="">Entrar com google</button>
     <button id="signOutButton" class="">Sair</button>
-    <p id="message"></p>
+    <p id="message"></p> -->
 
     <div id="loading" style="display: none; text-align: center;">
         <div class="spinner-border text-primary" role="status">
@@ -44,12 +44,20 @@
         </div>
     </div>
 
-    <div class="w-75 m-auto mt-3 row row-cols-1 row-cols-md-2">
-        <button id="toggleDarkMode" class="btn btn-secondary">Modo Claro</button>
-        <div id="signInButton" class="">
-            <img src="./img/google.png"> Login com Google
+    <div class="w-75 m-auto mt-3 mb-3">
+        <div class="row row-cols-1 row-cols-md-2 g-2 justify-content-center">
+            <div class="col">
+                <button id="toggleDarkMode" class="btn btn-secondary w-100">Modo Claro</button>
+            </div>
+    
+            <div class="col">
+                <button id="googleAuthButton" class="btn btn-outline-primary d-flex align-items-center justify-content-center w-100">
+                    <img id="img-google" src="./img/google.png" alt="Google Logo" style="height: 24px; margin-right: 10px;">
+                    <span id="span-google">Login com Google</span>
+                </button>
+            </div>
         </div>
-    </div>
+    </div> 
 
     <div id="filter-div" class="w-75 m-auto mt-3 mb-3">
         <div class="card">

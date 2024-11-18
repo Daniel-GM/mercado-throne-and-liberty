@@ -29,24 +29,22 @@ function getBackgroundColor(grade) {
 }
 
 async function toggleFavorite(itemId) {
-  let favorites = await getDocumentData("favoritos","CdNAZ9jZ1YhBAAv0uBd1IkuQyav2")
-  
+  const userId = await getCurrentUserUid()
+  const favorites = await getDocumentData("favoritos", userId)
+
   if (favorites.includes(itemId)) {
-    // favorites = favorites.filter(fav => fav !== itemId)
-    removeItemFromArray("favoritos", "CdNAZ9jZ1YhBAAv0uBd1IkuQyav2", itemId)
+    removeItemFromArray("favoritos", userId, itemId)
   } else {
-    addItemFromArray("favoritos", "CdNAZ9jZ1YhBAAv0uBd1IkuQyav2", itemId)
-    // favorites.push(itemId)
+    addItemFromArray("favoritos", userId, itemId)
   }
 
   await updateFavoriteButton(itemId)
 }
 
 async function updateFavoriteButton(itemId) {
+  const userId = await getCurrentUserUid()
   const button = document.querySelector(`.favorite-button[data-id="${itemId}"]`)
-  let favorites = await getDocumentData("favoritos","CdNAZ9jZ1YhBAAv0uBd1IkuQyav2")
-
-  console.log(favorites)
+  const favorites = await getDocumentData("favoritos", userId)
 
   if (button) {
     if (favorites.includes(itemId)) {
@@ -173,10 +171,15 @@ function changePage(pageNumber) {
 }
 
 function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', searchQuery = '', bossFilter = '', worldbossFilter = '', selectedRegions, onlyFavorites) {
-  return new Promise((resolve, reject) => {
+  return new Promise(async (resolve, reject) => {
     try {
+      const userId = await getCurrentUserUid()
       let htmlContent = ''
-      const favorites = JSON.parse(localStorage.getItem('favorites')) || [];
+      
+      let favorites = [];
+      if (userId) {
+        favorites = await getDocumentData("favoritos", userId) || [];
+      }
 
       const filteredKeys = Object.keys(saFMap).filter(id => {
         const item = saFMap[id]
