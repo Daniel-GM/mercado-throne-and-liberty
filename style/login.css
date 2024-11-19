@@ -1,13 +1,8 @@
-.none {
-    display: none;
+span.hover-text {
+    opacity: 0.5;
+    color: #f00;
 }
 
-#signInButton img {
-    width: 24px;
-    height: 24px;
-}
-
-#signInButton {
-    border: solid 1px;
-    border-radius: 5px;
+#img-google {
+    border-radius: 15px;
 }

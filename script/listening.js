@@ -23,22 +23,6 @@ document.getElementById('filter').addEventListener('click', async () => {
     executeFilter()
 })
 
-// document.getElementById('categoryFilter').addEventListener('change', async () => {
-//     executeFilter()
-// })
-
-// document.getElementById('subcategoryFilter').addEventListener('change', async () => {
-//     executeFilter()
-// })
-
-// document.getElementById('bossFilter').addEventListener('change', async () => {
-//     executeFilter()
-// })
-
-// document.getElementById('worldbossFilter').addEventListener('change', async () => {
-//     executeFilter()
-// })
-
 async function executeFilter() {
     const selectedCheckboxes = Array.from(document.querySelectorAll('#checkbox-region input[type="checkbox"]:checked'))
 
