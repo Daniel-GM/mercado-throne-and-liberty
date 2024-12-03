@@ -96,6 +96,33 @@ const bossDrops = {
         "feet_leather_a_t1_nomal_002_TraitExtract",
         "legs_leather_a_t1_nomal_002_TraitExtract",
         "chest_leather_a_t1_nomal_002_TraitExtract"
+    ],
+    "Gaitan": [
+        "feet_plate_aa_t1_nomal_002",
+        "",
+        "",
+        "",
+        "feet_plate_aa_t1_nomal_004",
+        "feet_plate_aa_t1_nomal_001",
+        "feet_leather_aa_t1_nomal_003",
+        "feet_leather_aa_t1_nomal_001",
+        "feet_fabric_aa_t1_nomal_002",
+        "feet_fabric_aa_t1_nomal_001",
+        "",
+        "",
+        ""
+    ],
+    "kertaki": [
+        
+    ],
+    "Kaligras": [
+        
+    ],
+    "Turka": [
+        
+    ],
+    "Shakarux": [
+        
     ]
 }
 
