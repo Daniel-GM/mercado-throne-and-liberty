@@ -204,7 +204,6 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
         const backgroundColor = getBackgroundColor(itemSaF.grade)
         const isFavorite = favorites.includes(id);
 
-        // <h2 class="h6 mb-0" style="word-break: break-all; font-size: 14px;">${itemSaF.id}</h2>
         htmlContent += `
           <div class="card mb-3 shadow-sm">
             <div class="row g-0">
@@ -213,6 +212,8 @@ function generate(saFMap, naeEMap, categoryFilter = '', subcategoryFilter = '', 
                   <img src="https://cdn.questlog.gg/throne-and-liberty${itemImg}.webp" class="img-fluid rounded" alt="${itemSaF.name}" style="max-height: 100px;">
                   <div>
                     <h2 class="h6 mb-0" style="word-break: break-all; font-size: 14px;">${itemSaF.name}</h2>
+                    <h2 class="h6 mb-0" style="word-break: break-all; font-size: 14px;">${itemSaF.id}</h2>
+
                     </div>
                     <button class="favorite-button" data-id="${id}" onclick="toggleFavorite('${id}')" style="background-color: #00000000; border: none;">
                       ${isFavorite ? '★' : '☆'}
